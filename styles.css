@@ -1,0 +1,159 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #D4D4D4;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header區域 */
+.header {
+    padding: 50px 20px;
+}
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon, .resume-link {
+    margin: 0 10px;
+}
+
+.icon {
+    color: #007acc;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Full Resume 按鈕 */
+.resume-link {
+    display: inline-block;
+    padding: 0.6em 1.5em;
+    font-size: 1.1em;
+    background: #007acc;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* About Me區域 */
+#about {
+    padding: 40px 20px;
+    background-color: #252526;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Experience區域 */
+#experience {
+    text-align: left;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.experience-container {
+    margin-top: 20px;
+}
+
+.experience-card {
+    background-color: #252526;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.highlight {
+    background-color: #3C3C3C;
+    color: #D4D4D4;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Gallery區域 */
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Education區域 */
+#education {
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.education-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.education-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
