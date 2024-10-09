@@ -83,14 +83,24 @@ p {
 
 .experience-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .experience-card {
+    display: flex;
     background-color: #252526;
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experience-text {
+    flex: 1;
 }
 
 .skills {
@@ -109,16 +119,15 @@ p {
     text-transform: uppercase;
 }
 
-/* Gallery區域 */
 .gallery {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .gallery img {
-    width: 100px;
-    height: 100px;
+    width: 150px; /* 調整圖片大小 */
+    height: 150px;
     border-radius: 5px;
     object-fit: cover;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
