@@ -4,113 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Cheng - Portfolio</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Andrew Cheng</h1>
-        <p>Full Stack Engineer | Data Analyst | IT Support Specialist</p>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank">
-                <i class="fab fa-linkedin fa-2x icon"></i>
-            </a>
-            <a href="resume.pdf" target="_blank" class="resume-link">Full Resume</a>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>I'm Andrew Cheng.</h1>
+            <p class="subtitle">Software Engineer | Data Analyst | IT Support</p>
+            <div class="social-links">
+                <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="buttons">
+                <a href="resume.pdf" class="button" target="_blank">Resume</a>
+                <a href="https://www.linkedin.com/in/andrewcheng887/" class="button">Contact</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#experience"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a proactive and detail-oriented professional with a passion for data analysis, DevOps, and IT support. I thrive in team settings, bringing positive energy and always seeking to improve processes. With a background in computer science, I excel in programming and problem-solving.</p>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-
-            <!-- Experience 1 -->
-            <div class="experience-container">
-                <div class="experience-card">
-                    <div class="experience-text">
-                        <h3>Senior Research Assistant</h3>
-                        <p>The University of Queensland & Queensland Children’s Hospital</p>
-                        <p>Brisbane, Australia | Feb 2024 – Current</p>
-                        <div class="skills">
-                            <span class="highlight">Node.js</span>
-                            <span class="highlight">HTML</span>
-                            <span class="highlight">CSS</span>
-                            <span class="highlight">MVC Framework</span>
-                            <span class="highlight">JavaScript</span>
-                        </div>
-                    </div>
-                    <!-- 圖片集 -->
-                    <div class="gallery">
-                        <img src="images/11.jpg" alt="Experience Image 1">
-                        <img src="images/12.jpg" alt="Experience Image 2">
-                        <img src="images/exp1_img3.jpg" alt="Experience Image 3">
-                    </div>
-                </div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <img src="images/12.jpg" alt="Experience GIF 1" class="experience-img">
+            <div class="experience-content">
+                <h3><i class="fas fa-briefcase"></i> Senior Research Assistant</h3>
+                <p><i class="fas fa-university"></i> The University of Queensland & Queensland Children’s Hospital</p>
+                <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | Feb 2024 – Current</p>
+                <ul class="skills">
+                    <li>Node.js</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Chart.js</li>
+                    <li>JavaScript</li>
+                    <li>Express.js</li>
+                    <li>GitHub</li>
+                    <li>Trello</li>
+                </ul>
             </div>
-
-            <!-- Experience 2 -->
-            <div class="experience-container">
-                <div class="experience-card">
-                    <div class="experience-text">
-                        <h3>Data Analyst</h3>
-                        <p>Desygner</p>
-                        <p>Gold Coast, Australia | Jan 2024 – Mar 2024</p>
-                        <div class="skills">
-                            <span class="highlight">MySQL</span>
-                            <span class="highlight">Data Visualization</span>
-                            <span class="highlight">GDPR Compliance</span>
-                            <span class="highlight">GitHub</span>
-                        </div>
-                    </div>
-                    <!-- 圖片集 -->
-                    <div class="gallery">
-                        <img src="images/exp2_img1.jpg" alt="Experience Image 1">
-                        <img src="images/exp2_img2.jpg" alt="Experience Image 2">
-                        <img src="images/exp2_img3.jpg" alt="Experience Image 3">
-                    </div>
-                </div>
+        </div>
+        <div class="experience-item">
+            <img src="images/powerBI.gif" alt="Experience GIF 2" class="experience-img">
+            <div class="experience-content">
+                <h3><i class="fas fa-database"></i> Data Analyst</h3>
+                <p><i class="fas fa-building"></i> Desygner</p>
+                <p><i class="fas fa-map-marker-alt"></i> Gold Coast, Australia | Jan 2024 – Mar 2024</p>
+                <ul class="skills">
+                    <li>MySQL</li>
+                    <li>Data Visualization</li>
+                    <li>Data governance</li>
+                    <li>PowerBI</li>
+                    <li>Data Cleaning</li>
+                    <li>Python</li>
+                    <li>Jira</li>
+                </ul>
             </div>
-
-            <!-- Experience 3 -->
-            <div class="experience-container">
-                <div class="experience-card">
-                    <div class="experience-text">
-                        <h3>IT Support Specialist</h3>
-                        <p>Chinese Cultural University</p>
-                        <p>Taipei, Taiwan | Dec 2017 – July 2021</p>
-                        <div class="skills">
-                            <span class="highlight">System Maintenance</span>
-                            <span class="highlight">Troubleshooting</span>
-                            <span class="highlight">Hardware Installation</span>
-                            <span class="highlight">Technical Support</span>
-                        </div>
-                    </div>
-                    <!-- 圖片集 -->
-                    <div class="gallery">
-                        <img src="images/exp3_img1.jpg" alt="Experience Image 1">
-                        <img src="images/exp3_img2.jpg" alt="Experience Image 2">
-                        <img src="images/exp3_img3.jpg" alt="Experience Image 3">
-                    </div>
-                </div>
+        </div>
+        <div class="experience-item">
+            <img src="images/pccu.jpg" alt="Experience GIF 3" class="experience-img">
+            <div class="experience-content">
+                <h3><i class="fas fa-wrench"></i> IT Support Specialist</h3>
+                <p><i class="fas fa-school"></i> Chinese Cultural University</p>
+                <p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan | Dec 2017 – July 2021</p>
+                <ul class="skills">
+                    <li>System Maintenance</li>
+                    <li>Troubleshooting</li>
+                    <li>Hardware Installation</li>
+                    <li>Technical Support</li>
+                    <li>Software Installation</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-card">
-                <div class="education-text">
-                    <h3>The University of Queensland (UQ)</h3>
-                    <p>Master of Information Technology</p>
-                    <p>Brisbane, Australia | 2022 – 2024</p>
-                </div>
-                <img src="images/UQ.png" alt="Education Image" class="education-img">
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="images/UQ.png" alt="Education Image" class="experience-img">
+            <div class="education-content">
+                <h3><i class="fas fa-graduation-cap"></i> University of Queensland</h3>
+                <p><i class="fas fa-book"></i> Master of Computer Science (Management)</p>
+                <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | 2022 – 2024</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 </body>
 </html>

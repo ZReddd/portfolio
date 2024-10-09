@@ -1,168 +1,125 @@
-/* 全局樣式 */
-body {
+body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
     color: #D4D4D4;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/background.gif') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    color: #FFFFFF;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2em;
+    color: #B0B0B0;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #D4D4D4;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #D4D4D4;
+    border-radius: 25px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #D4D4D4;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #D4D4D4;
+    color: #1E1E1E;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+}
+
+.scroll-down a {
+    color: #D4D4D4;
+    font-size: 2em;
+}
+
+#experience, #education {
+    padding: 60px 20px;
     background-color: #1E1E1E;
     text-align: center;
 }
 
-h1, h2, h3 {
-    margin: 0.5em 0;
+h2 {
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-p {
-    line-height: 1.6;
-}
-
-/* Header區域 */
-.header {
-    padding: 50px 20px;
-}
-
-.links {
-    margin-top: 10px;
+.experience-item, .education-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.icon, .resume-link {
-    margin: 0 10px;
-}
-
-.icon {
-    color: #007acc;
-    transition: transform 0.3s;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-/* Full Resume 按鈕 */
-.resume-link {
-    display: inline-block;
-    padding: 0.6em 1.5em;
-    font-size: 1.1em;
-    background: #007acc;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-.resume-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-/* About Me區域 */
-#about {
-    padding: 40px 20px;
-    background-color: #252526;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
     max-width: 800px;
-}
-
-/* Experience區域 */
-#experience {
-    text-align: left;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #1E1E1E;
-    color: #D4D4D4;
-    width: 90%;
-    max-width: 1200px;
     margin: 20px auto;
-}
-
-.experience-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.experience-card {
-    display: flex;
+    padding: 20px;
     background-color: #252526;
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
-    justify-content: space-between;
-    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.experience-text {
+.experience-img, .education-img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.experience-content, .education-content {
+    text-align: left;
     flex: 1;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.highlight {
+.skills li {
+    display: inline-block;
     background-color: #3C3C3C;
     color: #D4D4D4;
     padding: 5px 10px;
+    margin: 5px;
     border-radius: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
-.gallery {
-    display: flex;
-    gap: 10px;
-    margin-left: 20px;
+.experience-item h3, .education-item h3 {
+    font-size: 1.5em;
+    color: #80CBC4;
+    margin-bottom: 10px;
 }
 
-.gallery img {
-    width: 150px; /* 調整圖片大小 */
-    height: 150px;
-    border-radius: 5px;
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+.experience-item p, .education-item p {
+    font-size: 1.1em;
+    color: #B0BEC5;
 }
 
-/* Education區域 */
-#education {
-    padding: 20px;
-    background-color: #1E1E1E;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-.education-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #252526;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.education-text {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.education-img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: contain;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+.experience-item i, .education-item i {
+    color: #FFAB91;
+    margin-right: 8px;
 }
