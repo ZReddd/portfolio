@@ -8,8 +8,21 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Menu Button -->
+    <nav class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu-content">
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#experience" class="menu-item">Experience</a>
+            <a href="#about" class="menu-item">About Me</a>
+        </div>
+    </nav>
+
     <!-- Header Section -->
-    <header class="hero">
+    <header id="home" class="hero">
         <div class="hero-content">
             <h1>I'm Andrew Cheng.</h1>
             <p class="subtitle">Software Engineer | Data Analyst | IT Support</p>
@@ -23,15 +36,20 @@
             </div>
         </div>
         <div class="scroll-down">
-            <a href="#experience"><i class="fas fa-chevron-down"></i></a>
+            <a href="#experience">
+                <i class="fas fa-chevron-down"></i>
+                <p>Experience</p>
+            </a>
         </div>
     </header>
 
+   <!-- Main Content -->
+   <div class="main-content">
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="left-section">
         <h2>Experience</h2>
         <div class="experience-item">
-            <img src="images/12.jpg" alt="Experience GIF 1" class="experience-img">
+            <img src="images/12.jpg" alt="Experience Image 1" class="experience-img">
             <div class="experience-content">
                 <h3><i class="fas fa-briefcase"></i> Senior Research Assistant</h3>
                 <p><i class="fas fa-university"></i> The University of Queensland & Queensland Children’s Hospital</p>
@@ -42,12 +60,17 @@
                     <li>CSS</li>
                     <li>Chart.js</li>
                     <li>JavaScript</li>
-                    <li>Express.js</li>
-                    <li>GitHub</li>
-                    <li>Trello</li>
                 </ul>
-            </div>
+             <!-- 成就部分 -->
+        <div class="achievements">
+            <h4>🌟Achievements</h4>
+            <ul>
+                <li>Developed web applications for Movement Behavior Questionnaire, enhancing data visualization.</li>
+                <li>Provided accessible data to support a clearer understanding of children's behavior and needs.</li>
+            </ul>
         </div>
+    </div>
+</div>
         <div class="experience-item">
             <img src="images/powerBI.gif" alt="Experience GIF 2" class="experience-img">
             <div class="experience-content">
@@ -63,8 +86,16 @@
                     <li>Python</li>
                     <li>Jira</li>
                 </ul>
-            </div>
+             <!-- 成就部分 -->
+        <div class="achievements">
+            <h4>🌟Achievements</h4>
+            <ul>
+                <li>Perform data cleansing to significantly improve the quality of the database</li>
+                <li>Create data reports to improve business decisions </li>
+            </ul>
         </div>
+    </div>
+</div>
         <div class="experience-item">
             <img src="images/pccu.jpg" alt="Experience GIF 3" class="experience-img">
             <div class="experience-content">
@@ -78,8 +109,16 @@
                     <li>Technical Support</li>
                     <li>Software Installation</li>
                 </ul>
-            </div>
+             <!-- 成就部分 -->
+        <div class="achievements">
+            <h4>🌟Achievements</h4>
+            <ul>
+                <li>Managed university-wide computer systems and projectors, reducing breakdowns.</li>
+                <li>Facilitated the installation and maintenance of hardware and software.</li>
+            </ul>
         </div>
+    </div>
+</div>
     </section>
 
     <!-- Education Section -->
@@ -91,8 +130,30 @@
                 <h3><i class="fas fa-graduation-cap"></i> University of Queensland</h3>
                 <p><i class="fas fa-book"></i> Master of Computer Science (Management)</p>
                 <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | 2022 – 2024</p>
-            </div>
+             <!-- 成就部分 -->
+        <div class="achievements">
+            <h4>🌟Thesis</h4>
+            <ul>
+                <li> Developed parallelized passive radar systems using C/C++/CUDA on GP-GPU platforms, optimizing performance with FFT-based correlation and real-time data.</li>
+                <li>  Conducted algorithm analysis, performance evaluation, and bottleneck identification, ensuring efficient and reliable radar processing.
+            </ul>
         </div>
+    </div>
+</div>
     </section>
+</body>
+<!-- About Me Section -->
+<section id="about" class="about-me">
+    <h2>About Me</h2>
+    <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 📍 Location: Adelaide, Australia</li>
+        <li><i class="fas fa-lightbulb"></i> 💡 Optimistic & Vibrant: Naturally positive, I bring energy and enthusiasm to every situation.</li>
+        <li><i class="fas fa-book"></i> 📚 Quiet Contemplator: Equally comfortable with introspection and calm, serene moments.</li>
+        <li><i class="fas fa-rocket"></i> 🚀 Proactive Spirit: Always striving for improvement and embodying a "can-do" attitude.</li>
+        <li><i class="fas fa-water"></i> 🌊 Nature Lover: Drawn to the beauty of the outdoors, especially the tranquil seaside.</li>
+        <li><i class="fas fa-utensils"></i> 🍽️ Picnic Enthusiast: Finds joy in simple pleasures like a meal under the open sky.</li>
+    </ul>
+</section>
+</div>
 </body>
 </html>

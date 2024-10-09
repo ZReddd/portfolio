@@ -1,3 +1,4 @@
+/* 全局樣式 */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,13 +7,49 @@ body, html {
     color: #D4D4D4;
 }
 
+/* 菜單樣式 */
+.menu {
+    position: fixed; 
+    top: 20px;
+    left: 20px; 
+    z-index: 1000; 
+}
+
+.menu-icon {
+    font-size: 1.8em;
+    color: #D4D4D4;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+#menu-toggle:checked + .menu-icon + .menu-content {
+    display: flex;
+}
+
+.menu-item {
+    color: #D4D4D4;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.menu-item:hover {
+    background-color: #444;
+}
+
+/* Header區域 */
 .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('images/background.gif') no-repeat center center/cover;
+    background: url('images/space.gif') no-repeat center center/cover;
     text-align: center;
 }
 
@@ -22,8 +59,8 @@ body, html {
 }
 
 .hero-content .subtitle {
-    font-size: 1.2em;
-    color: #B0B0B0;
+    font-size: 1.5em;
+    color: #ece5e5;
     margin-top: 10px;
 }
 
@@ -63,7 +100,9 @@ body, html {
     font-size: 2em;
 }
 
+/* 其他區域樣式 */
 #experience, #education {
+    background: url('images/simple.jpg') no-repeat center center/cover;
     padding: 60px 20px;
     background-color: #1E1E1E;
     text-align: center;
@@ -121,5 +160,82 @@ h2 {
 
 .experience-item i, .education-item i {
     color: #FFAB91;
+    margin-right: 8px;
+}
+
+/* Scroll down樣式 */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D4D4D4;
+    text-align: center;
+}
+
+.scroll-down a {
+    color: #D4D4D4;
+    font-size: 2em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 2s ease-in-out infinite alternate;
+}
+
+.scroll-down p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #D4D4D4;
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(10px); opacity: 0.8; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* About Me 區域樣式 */
+.about-me {
+    background-color: #252526;
+    padding: 15px;
+    border-radius: 8px;
+    color: #D4D4D4;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-me h2 {
+    font-size: 2em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me li {
+    font-size: 1em; /* 調整字體大小 */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #B0BEC5;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.about-me li:hover {
+    background-color: #444;
+}
+
+.about-me li i {
+    color: #FFD700; /* 橙黃色 */
+    font-size: 1.2em;
     margin-right: 8px;
 }
