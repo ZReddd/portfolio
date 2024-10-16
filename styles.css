@@ -15,11 +15,11 @@ body, html {
     z-index: 1000; 
 }
 
-.menu-icon {
+/* .menu-icon {
     font-size: 1.8em;
     color: #D4D4D4;
     cursor: pointer;
-}
+} */
 
 #menu-toggle {
     display: none;
@@ -27,9 +27,9 @@ body, html {
 
 
 
-#menu-toggle:checked + .menu-icon + .menu-content {
+/* #menu-toggle:checked + .menu-icon + .menu-content {
     display: flex;
-}
+} */
 
 .menu-item {
     color: #D4D4D4;
@@ -69,6 +69,17 @@ body, html {
     margin: 0 10px;
     font-size: 1.5em;
 }
+.links-buttons{
+    display: inline-block;
+    border: 1px solid #D4D4D4;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ebf2f6; 
+    transition: all 0.3s;
+    text-align: center; 
+}
 
 .buttons {
     margin-top: 20px;
@@ -83,6 +94,8 @@ body, html {
     text-decoration: none;
     color: #D4D4D4;
     transition: all 0.3s;
+    display: block;
+    margin-bottom: 10px; 
 }
 
 .button:hover {
@@ -126,8 +139,8 @@ h2 {
 }
 
 .experience-img, .education-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 320px;
     margin-right: 20px;
     border-radius: 8px;
     object-fit: cover;
@@ -267,4 +280,145 @@ h2 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Data Visualization Section */
+.data-visualisation-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #252526;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #80CBC4;
+    margin-bottom: 15px;
+}
+
+.project-img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #B0BEC5;
+}
+
+/* Thesis Section */
+.Thesis-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+}
+
+.Thesis-section h2 {
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.project {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #252526;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #80CBC4;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #B0BEC5;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em; /* 調整標題字體大小 */
+    }
+    
+    .hero-content .subtitle {
+        font-size: 1em; /* 調整副標題字體大小 */
+    }
+    
+    .experience-item, .education-item {
+        flex-direction: column; /* 垂直排列，適合窄螢幕 */
+        align-items: center;
+    }
+
+    .experience-img, .education-img {
+        margin-right: 0; /* 移除 margin */
+        margin-bottom: 20px;
+        width: 100px; /* 調整圖片大小 */
+        height: 100px;
+    }
+
+    .about-container {
+        flex-direction: column; /* 垂直排列，適合窄螢幕 */
+    }
+    
+    .about-me {
+        margin-right: 0; /* 移除左右間距 */
+        margin-bottom: 20px; /* 增加底部間距 */
+    }
+    
+    .buttons, .links-buttons {
+        padding: 8px 15px; /* 減少按鈕內部的填充空間 */
+        border-radius: 15px; /* 減小圓角 */
+    }
+
+    .button {
+        margin: 5px 0; /* 調整按鈕間距 */
+        padding: 8px 15px; /* 減小填充空間 */
+    }
+
+    .menu {
+        top: 10px; /* 調整菜單位置 */
+        left: 10px;
+    }
+    
+    .menu-item {
+        font-size: 0.9em; /* 調整菜單字體大小 */
+        padding: 8px;
+    }
 }

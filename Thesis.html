@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cheng - Thesis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Menu Button -->
+    <nav class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu-content">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="index.html#experience" class="menu-item">Experience</a>
+            <a href="index.html#about" class="menu-item">About Me</a>
+            <div class="buttons">
+                <a href="data-visualisation.html" class="button">Data Visualisation Projects</a>
+                <a href="Thesis.html" class="button">Thesis</a>
+            </div>
+        </div>
+    </nav>
+         <!-- Thesis Section -->
+         <section class="Thesis-section">
+            <h2>Thesis</h2>
+            
+            <div class="project"> 
+                <h3>Sensing the world using EM 
+                    signals:
+                    using radar to gain better 
+                    situational awareness</h3>
+                    <p>
+                        This thesis focuses on optimizing Range-Doppler Map (RDMap) generation for passive radar systems by transitioning from Python to C++ and leveraging GPU acceleration with CUDA and cuFFT. Using an FFT-based correlation method, we highlight the importance of power-of-2 signal lengths for consistent accuracy across both CPU and GPU platforms.
+                        <br><br>
+                        The results show significant efficiency gains with GPU acceleration, particularly through the advanced capabilities of the cuFFT library. Additionally, our comparative analysis identifies the O3 optimization level as highly effective in most cases.
+                        <br><br>
+                        These insights have broad implications for real-time signal processing, showcasing potential improvements in efficiency and reliability for passive radar systems.
+                    </p>
+                <img src="images/FFT.JPG" alt="City of Adelaide Age Structure" class="project-img">
+                
+            </div>   
+            <div class="project">
+                <h3>Passive Radar System</h3>
+                <p>
+                    Passive radar systems detect and process signals from external sources, such as cell phone signals or other electromagnetic waves, that are reflected by objects in the environment. By analyzing these reflected signals, passive radar can determine the location, speed, and direction of objects without emitting any signals of its own.
+                    <br><br>
+                    Unlike traditional radar systems, which transmit and receive their own signals, passive radar uses existing electromagnetic waves. It typically employs two channels: a reference channel, which captures direct signals from the source, and a surveillance channel, which detects reflections from objects.
+                    <br><br>
+                    This technology has various applications in surveillance, air traffic control, and other fields, providing an efficient way to monitor environments without actively broadcasting signals.
+                </p>
+                <img src="images/passive radar.jpg" alt="Passive Radar System Diagram" class="small-img">
+            </div>
+            <div class="project">
+                <h3>Understanding CUDA Workflow</h3>
+                <p>
+                    This section illustrates the CUDA workflow for optimizing computations on the GPU:
+                    <br><br>
+                    1. Configure memory and initialize data at the host (CPU).
+                    <br>
+                    2. Configure memory on the device (GPU).
+                    <br>
+                    3. Transfer data from the host to the device (CPU → GPU).
+                    <br>
+                    4. Execute the kernel on the GPU.
+                    <br>
+                    5. Send data from the device back to the host (GPU → CPU).
+                    <br><br>
+                    <strong>Kernel:</strong> CUDA enables the creation of custom kernel functions that are executed once per thread, repeated across multiple threads to parallelize tasks efficiently.
+                    <br><br>
+                    <strong>Thread Hierarchy:</strong> In CUDA, computation is organized into threads. Threads form blocks, and blocks form grids, allowing for scalable parallel processing across the GPU.
+                </p>
+                <img src="images/CUDA.JPG" alt="CUDA Workflow" class="project-img" style="width: 40%; margin: 10px auto;">
+
+            </div>   
+        </section>
+
+
+</body>
+</html>
