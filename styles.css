@@ -362,6 +362,88 @@ h2 {
     margin: 15px auto;
     border-radius: 10px;
 }
+/* AR Project Section */
+.ar-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+}
+
+.ar-section h2 {
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.project {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #252526;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #80CBC4;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #B0BEC5;
+    line-height: 1.6em;
+}
+
+.project-video {
+    display: block;
+    margin: 20px auto; 
+    width: 30%; 
+    height: auto;
+    border-radius: 8px;
+}
+.skills-section {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-section h3 {
+    font-size: 1.8em;
+    color: #80CBC4;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #3C3C3C;
+    color: #D4D4D4;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #80CBC4;
+    color: #252526;
+}
 
 
 
@@ -373,6 +455,21 @@ h2 {
 
 
 @media (max-width: 768px) {
+    .menu-item, .button {
+        font-size: 0.8em; /* 縮小字體 */
+        padding: 5px 10px; /* 縮小內邊距 */
+        margin: 3px 0; /* 減少按鈕間距 */
+        border-radius: 15px; /* 減小圓角半徑 */
+    }
+
+    .menu-content .button {
+        width: auto; /* 自動適應按鈕寬度 */
+    }
+    
+    /* 縮小標題字體，防止重疊 */
+    .project h3 {
+        font-size: 1.5em;
+    }
     .hero-content h1 {
         font-size: 2em; /* 調整標題字體大小 */
     }
@@ -421,4 +518,19 @@ h2 {
         font-size: 0.9em; /* 調整菜單字體大小 */
         padding: 8px;
     }
+    .project-video {
+        width: 90%; /* 設定影片在手機上更大，以提升觀看體驗 */
+        margin: 15px auto; /* 確保影片在小螢幕上居中顯示 */
+    }
+    
+    .small-img {
+        width: 80%; /* 調整小圖片在手機上的寬度 */
+        margin: 15px auto; /* 確保小圖片在手機上居中顯示 */
+    }
+
+    .project-img {
+        width: 80%; /* 調整主要圖片在手機上的寬度 */
+        margin: 15px auto; /* 確保主要圖片在手機上居中顯示 */
+    }
 }
+
