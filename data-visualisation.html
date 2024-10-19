@@ -6,28 +6,34 @@
     <title>Andrew Cheng - Data Visualization</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Menu Button -->
-    <nav class="menu">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="menu-content">
-            <a href="index.html" class="menu-item">Home</a>
-            <a href="index.html#experience" class="menu-item">Experience</a>
-            <a href="index.html#about" class="menu-item">About Me</a>
-            <div class="buttons">
-                <a href="data-visualisation.html" class="button">Data Visualisation Projects</a>
-                <a href="Thesis.html" class="button">Thesis</a>
-                <a href="AR.html" class="button">AR software projects</a>
-            </div>
-        </div>
-    </nav>
+<!-- Menu Button -->
+<nav class="menu">
+    <div class="menu-content">
+        <a href="index.html#home" class="menu-item">Home</a>
+        <a href="index.html#experience" class="menu-item">Experience</a>
+        <a href="index.html#about" class="menu-item">About Me</a>
+        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> <!-- 添加ID，觸發模態窗口 -->
+    </div>
+</nav>
+
+<!-- 模態窗口結構 -->
+<div id="projects-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select a Project</h2>
+        <a href="data-visualisation.html" class="button">Data Visualisation Project</a>
+        <a href="Thesis.html" class="button">Thesis</a>
+        <a href="AR.html" class="button">AR software project</a>
+        <a href="AWL.html" class="button">Financial Data Visualization</a>
+    </div>
+</div>
+<script src="script.js"></script>
      <!-- Data Visualization Section -->
      <section class="data-visualisation-section">
-        <h2>Data reports</h2>
+        <h2>Data Report</h2>
         
         <div class="project"> 
             <h3>City of Adelaide’s Age Structure</h3>

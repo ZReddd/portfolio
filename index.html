@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,22 +6,33 @@
     <title>Andrew Cheng - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Menu Button -->
-    <nav class="menu">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="menu-content">
-            <a href="#home" class="menu-item">Home</a>
-            <a href="#experience" class="menu-item">Experience</a>
-            <a href="#about" class="menu-item">About Me</a>
-            <a href="#home" class="menu-item">Projects</a>
-        </div>
-    </nav>
+    
+<!-- Menu Button -->
+<nav class="menu">
+    <div class="menu-content">
+        <a href="#home" class="menu-item">Home</a>
+        <a href="#experience" class="menu-item">Experience</a>
+        <a href="#about" class="menu-item">About Me</a>
+        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> <!-- 添加ID，觸發模態窗口 -->
+    </div>
+</nav>
 
+<!-- 模態窗口結構 -->
+<div id="projects-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select a Project</h2>
+        <a href="data-visualisation.html" class="button">Data Visualisation Project</a>
+        <a href="Thesis.html" class="button">Thesis</a>
+        <a href="AR.html" class="button">AR software project</a>
+        <a href="AWL.html" class="button">Financial Data Visualization</a>
+    </div>
+</div>
+<script src="script.js"></script>
     <!-- Header Section -->
     <header id="home" class="hero">
         <div class="hero-content">
@@ -30,19 +41,10 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/andrewcheng887/" class="links-buttons" target="_blank">Contact</a>
-            </div>
-            <div class="buttons">
-                <a href="data-visualisation.html" class="button">Data Visualisation Projects</a>
-                <a href="Thesis.html" class="button">Thesis</a>
-                <a href="AR.html" class="button">AR software project</a>
-            </div>
         </div>
         <div class="scroll-down">
             <a href="#experience">
-                <i class="fas fa-chevron-down"></i>
-                <p>Experience</p>
+                <i class="fas fa-angle-double-down"></i>
             </a>
         </div>
     </header>
@@ -53,21 +55,12 @@
     <section id="experience" class="left-section">
         <h2>Experience</h2>
         <div class="experience-item">
-            <img src="images/12.jpg" alt="Experience Image 1" class="experience-img">
+            <!-- <img src="images/12.jpg" alt="Experience Image 1" class="experience-img"> -->
             <div class="experience-content">
-                <h3><i class="fas fa-briefcase"></i>Technical Officer/Senior Research Assistant</h3>
-                <p><i class="fas fa-university"></i>The University of Queensland & Queensland Childrens Hospital</p>
+                <h3>Technical Officer/Senior Research Assistant</h3>
+                <p>The University of Queensland & Queensland Childrens Hospital</p>
                 <p><i class="fas fa-map-marker-alt"></i>Brisbane, Australia | Feb 2024 - Current</p>
-                <ul class="skills">
-                    <li>Node.js</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Chart.js</li>
-                    <li>Express.js</li>
-                    <li>JavaScript</li>
-                    <li>Project management</li>
-                    <li>Data Visualization</li>
-                </ul>
+
              <!-- 成就部分 -->
         <div class="achievements">
             <h4>🌟Achievements</h4>
@@ -75,25 +68,26 @@
                 <li>Developed web applications for Movement Behavior Questionnaire, enhancing data visualization.</li>
                 <li>Provided accessible data to support a clearer understanding of children's behavior and needs.</li>
             </ul>
+            <ul class="skills">
+                <li>Node.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Chart.js</li>
+                <li>Express.js</li>
+                <li>JavaScript</li>
+                <li>Project management</li>
+                <li>Data Visualization</li>
+            </ul>
         </div>
     </div>
 </div>
         <div class="experience-item">
-            <img src="images/powerBI.gif" alt="Experience GIF 2" class="experience-img">
+            <!-- <img src="images/powerBI.gif" alt="Experience GIF 2" class="experience-img"> -->
             <div class="experience-content">
-                <h3><i class="fas fa-database"></i>Data Analyst</h3>
-                <p><i class="fas fa-building"></i>Desygner</p>
+                <h3>Data Analyst</h3>
+                <p>Desygner</p>
                 <p><i class="fas fa-map-marker-alt"></i>Gold Coast, Australia | Jan 2024 - Mar 2024</p>
-                <ul class="skills">
-                    <li>MySQL</li>
-                    <li>Data Visualization</li>
-                    <li>Data governance</li>
-                    <li>PowerBI</li>
-                    <li>Data Cleaning</li>
-                    <li>Python</li>
-                    <li>Jira</li>
-                    <li>Excel</li>
-                </ul>
+
              <!-- 成就部分 -->
         <div class="achievements">
             <h4>🌟Achievements</h4>
@@ -101,28 +95,38 @@
                 <li>Perform data cleansing to significantly improve the quality of the database</li>
                 <li>Create data reports to improve business decisions </li>
             </ul>
+            <ul class="skills">
+                <li>MySQL</li>
+                <li>Data Visualization</li>
+                <li>Data governance</li>
+                <li>PowerBI</li>
+                <li>Data Cleaning</li>
+                <li>Python</li>
+                <li>Jira</li>
+                <li>Excel</li>
+            </ul>
         </div>
     </div>
 </div>
         <div class="experience-item">
-            <img src="images/pccu.jpg" alt="Experience GIF 3" class="experience-img">
+            <!-- <img src="images/pccu.jpg" alt="Experience GIF 3" class="experience-img"> -->
             <div class="experience-content">
-                <h3><i class="fas fa-wrench"></i>IT Support Specialist</h3>
-                <p><i class="fas fa-school"></i>Cultural University</p>
+                <h3></i>IT Support Specialist</h3>
+                <p></i>Cultural University</p>
                 <p><i class="fas fa-map-marker-alt"></i>Taipei, Taiwan | Dec 2017 - July 2021</p>
-                <ul class="skills">
-                    <li>System Maintenance</li>
-                    <li>Troubleshooting</li>
-                    <li>Hardware Installation</li>
-                    <li>Technical Support</li>
-                    <li>Software Installation</li>
-                </ul>
              <!-- 成就部分 -->
         <div class="achievements">
             <h4>🌟Achievements</h4>
             <ul>
                 <li>Managed university-wide computer systems and projectors, reducing breakdowns.</li>
                 <li>Facilitated the installation and maintenance of hardware and software.</li>
+            </ul>
+            <ul class="skills">
+                <li>System Maintenance</li>
+                <li>Troubleshooting</li>
+                <li>Hardware Installation</li>
+                <li>Technical Support</li>
+                <li>Software Installation</li>
             </ul>
         </div>
     </div>
@@ -131,36 +135,31 @@
 
     <!-- Education Section -->
     <section id="education">
-        <h2>Education</h2>
+        <h2><i class="fas fa-graduation-cap"></i>Education</h2>
         <div class="education-item">
             <img src="images/UQ.png" alt="Education Image" class="experience-img">
             <div class="education-content">
-                <h3><i class="fas fa-graduation-cap"></i>The University of Queensland</h3>
-                <p><i class="fas fa-book"></i>Master of Computer Science (Management)</p>
+                <h3>The University of Queensland</h3>
+                <p>Master of Computer Science (Management)</p>
                 <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | 2022 - 2024</p>
-             <!-- 成就部分 -->
-        <div class="achievements">
-            <h4>🌟Thesis</h4>
-            <ul>
-                <li> Developed parallelized passive radar systems using C/C++/CUDA on GP-GPU platforms, optimizing performance with FFT-based correlation and real-time data.</li>
-                <li>  Conducted algorithm analysis, performance evaluation, and bottleneck identification, ensuring efficient and reliable radar processing.
-            </ul>
         </div>
     </div>
 </div>
     </section>
 </body>
+
+
 <!-- About Me Section -->
 <div class="about-container">
     <section id="about" class="about-me">
         <h2>About Me</h2>
         <ul>
-            <li><i class="fas fa-map-marker-alt"></i> 📍 Location: Adelaide, Australia</li>
-            <li><i class="fas fa-lightbulb"></i> 💡 Optimistic & Vibrant: Naturally positive, I bring energy and enthusiasm to every situation.</li>
-            <li><i class="fas fa-book"></i> 📚 Quiet Contemplator: Equally comfortable with introspection and calm, serene moments.</li>
-            <li><i class="fas fa-rocket"></i> 🚀 Proactive Spirit: Always striving for improvement and embodying a "can-do" attitude.</li>
-            <li><i class="fas fa-water"></i> 🌊 Nature Lover: Drawn to the beauty of the outdoors, especially the tranquil seaside.</li>
-            <li><i class="fas fa-utensils"></i> 🍽️ Picnic Enthusiast: Finds joy in simple pleasures like a meal under the open sky.</li>
+            <li>📍 Location: Adelaide, Australia</li>
+            <li>💡 Optimistic & Vibrant: Naturally positive, I bring energy and enthusiasm to every situation.</li>
+            <li>📚 Quiet Contemplator: Equally comfortable with introspection and calm, serene moments.</li>
+            <li>🚀 Proactive Spirit: Always striving for improvement and embodying a "can-do" attitude.</li>
+            <li>🌊 Nature Lover: Drawn to the beauty of the outdoors, especially the tranquil seaside.</li>
+            <li>🍽️ Picnic Enthusiast: Finds joy in simple pleasures like a meal under the open sky.</li>
         </ul>
     </section>
     <div class="about-gif">

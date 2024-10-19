@@ -2,45 +2,121 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1E1E1E;
+    font-family: 'Montserrat', sans-serif;  /* 使用更具設計感的字體 */
+    background-color: #000000be;
     color: #D4D4D4;
+    line-height: 1.6;  /* 增加行高，讓內容更易讀 */
 }
 
-/* 菜單樣式 */
 .menu {
-    position: fixed; 
+    position: fixed;
     top: 20px;
-    left: 20px; 
-    z-index: 1000; 
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
 }
-
-/* .menu-icon {
-    font-size: 1.8em;
-    color: #D4D4D4;
-    cursor: pointer;
-} */
 
 #menu-toggle {
-    display: none;
+    display: none; 
 }
 
-
-
-/* #menu-toggle:checked + .menu-icon + .menu-content {
+.menu-content {
     display: flex;
-} */
+    gap: 5px; 
+    align-items: center;
+    margin-left: 15px;
+}
 
 .menu-item {
     color: #D4D4D4;
     text-decoration: none;
     padding: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
 }
 
 .menu-item:hover {
-    background-color: #444;
+    background-color: #291d3d;
+    color: #e1ebea;
 }
+/* Modal Styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Background overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    padding: 30px; /* 增加一點填充，讓內容更居中 */
+    border-radius: 12px;
+    text-align: center;
+    width: 350px; /* 調整寬度，讓顯示效果更好 */
+    color: #D4D4D4;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2); /* 添加光影效果 */
+}
+
+.modal-content h2 {
+    color: #00FFF5; /* Project selection title color */
+    margin-bottom: 25px; /* 增加間距 */
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.project-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-options li {
+    margin: 15px 0; /* 每個項目之間留出更多空間 */
+}
+
+.project-options a {
+    color: #D4D4D4;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #333; /* 按鈕默認顏色 */
+    display: block;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* 給按鈕增加輕微陰影 */
+}
+
+.project-options a:hover {
+    background-color: #00FFF5; /* 懸停時的亮青色背景 */
+    color: #1e1e1e; /* 懸停時字體顏色變深 */
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5); /* 懸停時增加陰影效果 */
+}
+
+/* Close button */
+.close {
+    color: #D4D4D4;
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #00FFF5; /* 懸停時的關閉按鈕顏色 */
+}
+
+
+
 
 /* Header區域 */
 .hero {
@@ -115,66 +191,99 @@ body, html {
 
 /* 其他區域樣式 */
 #experience, #education {
-    background: url('images/simple.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%); /* 深黑灰色漸變背景，低調且穩重 */
     padding: 60px 20px;
-    background-color: #1E1E1E;
     text-align: center;
+    color: #E0E0E0; /* 保持亮灰色字體，增加可讀性 */
 }
 
+/* 標題樣式 */
 h2 {
-    font-size: 3em;
-    color: #FFFFFF;
+    font-size: 1.8em;
+    color: #e7edf0; /* 柔和的藍色，依然帶有科技感但更精緻 */
     margin-bottom: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; /* 強化標題感 */
+    text-shadow: 2px 2px 4px rgba(79, 195, 247, 0.2); /* 柔和的光暈效果，提升質感 */
 }
 
+/* Experience and Education Cards */
 .experience-item, .education-item {
     display: flex;
     align-items: center;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #252526;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(36, 36, 36, 0.9); /* 使用更深的透明灰色背景，營造層次感 */
+    border-radius: 12px; /* 略增大圓角，讓卡片更精緻 */
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.15); /* 柔和的藍色陰影，提升設計感 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.experience-item:hover, .education-item:hover {
+    transform: translateY(-5px); /* 懸停時略微上浮 */
+    box-shadow: 0 6px 20px rgba(79, 195, 247, 0.35); /* 懸停時陰影強化，突出質感 */
+}
+
+/* 圖片樣式 */
 .experience-img, .education-img {
     width: 200px;
     height: 320px;
     margin-right: 20px;
-    border-radius: 8px;
-    object-fit: cover;
+    border-radius: 12px; /* 仍保持輕微的圓角，讓圖片看起來更精緻 */
+    object-fit: cover; /* 確保圖片按比例適應框架 */
 }
 
+.experience-img:hover, .education-img:hover {
+    filter: grayscale(0%) brightness(1); /* 懸停時恢復正常亮度和色彩 */
+}
+
+/* Experience and Education Content */
 .experience-content, .education-content {
     text-align: left;
     flex: 1;
+    color: #D4D4D4; /* 保持柔和的淺灰色字體 */
 }
 
+/* 技能列表樣式 */
 .skills li {
     display: inline-block;
-    background-color: #3C3C3C;
-    color: #D4D4D4;
-    padding: 5px 10px;
+    background: rgba(79, 195, 247, 0.1); /* 使用柔和的藍色透明背景 */
+    color: #dce1e3; /* 與標題相呼應的藍色 */
+    padding: 6px 10px;
     margin: 5px;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 1px solid #d1dbe1; /* 輕微的邊框，讓元素更精緻 */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.skills li:hover {
+    background-color: #4fe3f7; /* 懸停時背景變為亮藍色 */
+    color: #1E1E1E; /* 懸停時文字變為深色 */
+}
+
+/* Experience and Education Titles */
 .experience-item h3, .education-item h3 {
-    font-size: 1.5em;
-    color: #80CBC4;
+    font-size: 1.2em;
+    color: #d7dee2; /* 與整體一致的藍色，突出但不刺眼 */
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
+/* Text within experience and education sections */
 .experience-item p, .education-item p {
-    font-size: 1.1em;
-    color: #B0BEC5;
+    font-size: 0.9em;
+    color: #B0BEC5; /* 使用柔和的淺灰色，提升科技感 */
+    line-height: 1.6;
 }
 
+/* Icon styles */
 .experience-item i, .education-item i {
-    color: #FFAB91;
+    color: #e2e9ed; /* 圖標顏色改為柔和的藍色 */
     margin-right: 8px;
 }
+
 
 /* Scroll down樣式 */
 .scroll-down {
@@ -188,24 +297,50 @@ h2 {
 }
 
 .scroll-down a {
-    color: #D4D4D4;
-    font-size: 2em;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeInUp 2s ease-in-out infinite alternate;
+    color: #D4D4D4;
+}
+
+.scroll-down i {
+    font-size: 1em; /* 調整箭頭大小 */
+    margin: 5px 0; /* 設置箭頭之間的間距 */
+    color: #D4D4D4;
+    animation: arrowFlow 1.5s infinite ease-in-out; /* 增加動畫效果 */
+}
+
+/* 第一個箭頭的動畫 */
+.scroll-down i:first-child {
+    animation-delay: 0s; /* 第一個箭頭立即開始動畫 */
+}
+
+/* 第二個箭頭的動畫 */
+.scroll-down i:last-child {
+    animation-delay: 0.75s; /* 第二個箭頭延遲 0.75 秒開始動畫 */
+}
+
+/* 流動箭頭動畫 */
+@keyframes arrowFlow {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px); /* 向下移動 10px */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px); /* 最終位置向下 20px */
+    }
 }
 
 .scroll-down p {
     font-size: 1em;
     margin-top: 10px;
     color: #D4D4D4;
-}
-
-@keyframes fadeInUp {
-    0% { transform: translateY(10px); opacity: 0.8; }
-    100% { transform: translateY(0); opacity: 1; }
 }
 
 .about-me {
@@ -242,20 +377,15 @@ h2 {
     align-items: center;
     color: #B0BEC5;
     padding: 8px;
-    background-color: rgba(7, 11, 87, 0.6);
+    background-color: rgba(9, 9, 10, 0.6);
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
 .about-me li:hover {
-    background-color: rgba(33, 89, 220, 0.8); 
+    background-color: rgba(39, 64, 119, 0.8); 
 }
 
-.about-me li i {
-    color: #FFD700;
-    font-size: 1.2em;
-    margin-right: 8px;
-}
 .about-container {
     display: flex;
     align-items: center;
@@ -289,10 +419,11 @@ h2 {
     padding: 60px 20px;
     text-align: center;
     background-image: url('images/Adelaide.jpg');
-    background-size: cover;
+    background-size: 100%;;
     background-position: center;
     background-repeat: no-repeat;
     color: #D4D4D4;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project {
@@ -302,6 +433,7 @@ h2 {
     background-color: #252526;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project h3 {
@@ -326,11 +458,12 @@ h2 {
 .Thesis-section {
     padding: 60px 20px;
     text-align: center;
-    background-image: url('images/thesis.jpg');
-    background-size: cover;
+    background-image: url('images/AI.jpg');
+    background-size: 100%;;
     background-position: center;
     background-repeat: no-repeat;
-    color: #D4D4D4;
+    color: #161515;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 
@@ -338,6 +471,7 @@ h2 {
     font-size: 3em;
     color: #FFFFFF;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project {
@@ -348,6 +482,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project h3 {
@@ -355,6 +490,7 @@ h2 {
     color: #80CBC4;
     margin-bottom: 15px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project p {
@@ -362,6 +498,7 @@ h2 {
     color: #B0BEC5;
     line-height: 1.6em;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project-img {
@@ -376,15 +513,17 @@ h2 {
     padding: 60px 20px;
     text-align: center;
     background-image: url('images/AI.jpg');
-    background-size: cover;
+    background-size: 100%;;
     background-position: center;
     background-repeat: no-repeat;
     color: #D4D4D4;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 .ar-section h2 {
-    font-size: 3em;
+    font-size: 1.5em;
     color: #FFFFFF;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project {
@@ -395,6 +534,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project h3 {
@@ -402,12 +542,15 @@ h2 {
     color: #80CBC4;
     margin-bottom: 15px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    text-decoration: underline; /* 加底線 */
 }
 
 .project p {
-    font-size: 1.1em;
-    color: #B0BEC5;
+    font-size: 0.95em;
+    color: #f4f6f7;
     line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .project-video {
@@ -425,12 +568,14 @@ h2 {
     border-radius: 8px;
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .skills-section h3 {
     font-size: 1.8em;
     color: #80CBC4;
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .skills-list {
@@ -439,6 +584,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .skills-list li {
@@ -449,11 +595,13 @@ h2 {
     border-radius: 15px;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 .skills-list li:hover {
     background-color: #80CBC4;
     color: #252526;
+    font-family: 'Montserrat', sans-serif; /* 設定字體 */
 }
 
 
@@ -545,3 +693,111 @@ h2 {
     }
 }
 
+/* Projects Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #252526;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #D4D4D4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .dropdown-content {
+        min-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* AWL Section */
+.AWL-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('images/Adelaide.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #D4D4D4;
+}
+/* About Me Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    width: 400px;  /* 調整寬度，讓框框不要太大 */
+    max-width: 90%;
+    text-align: center;
+    color: #D4D4D4;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.about-me li {
+    margin-bottom: 8px;
+    color: #B0BEC5;
+    font-size: 0.9em;
+}
+
+.about-gif img {
+    max-width: 180px;  /* GIF稍微放大 */
+    border-radius: 8px;
+}
+
+.close {
+    font-size: 1.5em;
+    color: #D4D4D4;
+    cursor: pointer;
+    float: right;
+}
+
+.close:hover {
+    color: #00FFF5;
+}

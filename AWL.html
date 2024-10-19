@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cheng - Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Menu Button -->
+<nav class="menu">
+    <div class="menu-content">
+        <a href="index.html#home" class="menu-item">Home</a>
+        <a href="index.html#experience" class="menu-item">Experience</a>
+        <a href="index.html#about" class="menu-item">About Me</a>
+        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> <!-- 添加ID，觸發模態窗口 -->
+    </div>
+</nav>
+
+<!-- 模態窗口結構 -->
+<div id="projects-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select a Project</h2>
+        <a href="data-visualisation.html" class="button">Data Visualisation Project</a>
+        <a href="Thesis.html" class="button">Thesis</a>
+        <a href="AR.html" class="button">AR software project</a>
+        <a href="AWL.html" class="button">Financial Data Visualization</a>
+    </div>
+</div>
+<script src="script.js"></script>
+    <!-- Financial Report Section -->
+    <section class="AWL-section">
+        <h2>Financial Report Visualization</h2>
+        
+        <div class="project">
+            <h3>Project Overview</h3>
+            <p>
+                This financial data is sourced directly from AWL's Annual Report. In this project, I have taken the raw financial figures from the report and transformed them into intuitive visualizations.
+            </p>
+            <p>
+                The goal is to present the data in a clear and comprehensible format, allowing stakeholders to quickly grasp AWL’s financial performance. By leveraging advanced data visualization techniques, the project highlights key metrics such as revenue breakdowns, expense allocations, and the overall financial position.
+            </p>
+            <p>
+                These visualizations make it easier to identify trends and insights at a glance, providing a more efficient way to understand AWL's financial status.
+            </p>
+            <img src="images/AWL_report.JPG" alt="Revenue Breakdown" class="project-img">
+        </div>
+        
+        <div class="project"> 
+            <h3>Revenue Breakdown for 2020/21 and 2019/20</h3>
+           
+            <p>This graph illustrates the revenue comparison between the financial years 2020/21 and 2019/20, highlighting operational income, legacies, grants, and other income.</p>
+            <img src="images/AWL_report1.JPG" alt="Revenue Breakdown" class="project-img">  
+        </div>
+        
+        <div class="project"> 
+            <h3>Expense Breakdown for 2020/21 and 2019/20</h3>
+            <p>This graph highlights the distribution of employee expenses and other operating costs over two financial years.</p>
+            <img src="images/AWL_report2.JPG" alt="Expense Breakdown" class="project-img">  
+        </div>
+        
+        <div class="project"> 
+            <h3>Total Comprehensive Income Comparison</h3>
+            <p>The total comprehensive income increased by $46,465 compared to the previous year.</p>
+            <img src="images/AWL_report3.JPG" alt="Income Comparison" class="project-img">  
+            
+        </div> 
+        <div class="skills-section">
+            <h3>Skills Used in This Project</h3>
+            <ul class="skills-list">
+                <li>PowerBI</li>
+                <li>Data Manipulation</li>
+                <li>Data Modeling</li>
+                <li>Data analysis</li>
+                <li>Data Cleaning</li>
+                <li>Data Visualisation</li>
+                <li>SQL</li>
+                <li>Excel</li>
+            </ul>
+        </div>     
+    </section>
+
+
+</body>
+</html>
