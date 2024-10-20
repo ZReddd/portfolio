@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cheng - Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Menu Button -->
+<nav class="menu">
+    <div class="menu-content">
+        <a href="index.html#home" class="menu-item">Home</a>
+        <a href="index.html#experience" class="menu-item">Experience</a>
+        <a href="index.html#about" class="menu-item">About Me</a>
+        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> <!-- 添加ID，觸發模態窗口 -->
+    </div>
+</nav>
+
+<!-- 模態窗口結構 -->
+<div id="projects-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select a Project</h2>
+        <a href="data-visualisation.html" class="button">Adelaide Age Structure Data Visualisation</a>
+        <a href="Thesis.html" class="button">Thesis</a>
+        <a href="AR.html" class="button">AR software project</a>
+        <a href="AWL.html" class="button">Financial Data Visualisation</a>
+        <a href="Map.html" class="button">Animal Rescue Mapping Visualisation</a>
+    </div>
+</div>
+<script src="script.js"></script>
+    <!-- Financial Report Section -->
+    <section class="AWL-section">
+        <h2>Financial Report Visualization</h2>
+        
+        <div class="project">
+            <h3>Project Overview</h3>
+            <p>
+                The data presented here is sourced from the Animal Welfare League's (AWL) Council Found Pets Listing.
+                I began by compiling the lost pets data into an Excel file, then utilized data visualization techniques 
+                to map the locations of found animals. 
+            </p>
+            <p>
+                This visualization effectively aids in tracking where lost animals 
+                are located, significantly improving rescue efforts. It also helps identify areas with a high concentration 
+                of lost animals, allowing for deeper investigation into potential causes.
+            </p>
+            <p>
+                By applying advanced data visualization strategies, this project provides a clear and structured view of 
+                the geographical distribution of lost pets. It serves as a tool for animal rescue teams and welfare organizations 
+                to better understand trends and focus their resources efficiently.
+            </p>
+            <img src="images/map4.JPG" alt="Lost Pets Map" class="project-img">
+        </div>
+        
+        <div class="project">
+            <h3>Mapping of Lost Pets</h3>
+            <p>
+                This map shows the geographical locations of lost pets based on the data collected. Each point on the map 
+                represents a lost animal found in a specific area, providing a clear visual reference to assist rescue teams.
+            </p>
+            <img src="images/map1.JPG" alt="Lost Pets Mapping" class="project-img">
+        </div>
+        
+        <div class="project">
+            <h3>Interactive Map with Pet Details</h3>
+            <p>
+                This is an interactive map where hovering over a specific point reveals additional details about the lost pet, 
+                including the animal’s breed, date found, microchip ID, and exact location. This feature enhances the clarity and 
+                accessibility of the data.
+            </p>
+            <img src="images/map2.JPG" alt="Interactive Map" class="project-img">
+        </div>
+        
+        <div class="project">
+            <h3>Scalable and Filterable Map</h3>
+            <p>
+                The map is fully scalable, allowing zooming in and out to focus on different areas. Additionally, if more data 
+                becomes available, new animals can be added, and the map can be filtered and categorized for more comprehensive 
+                visual representation.
+            </p>
+            <img src="images/map3.JPG" alt="Scalable Map" class="project-img">
+        </div>
+        
+        
+        
+
+        </div> 
+        <div class="skills-section">
+            <h3>Skills Used in This Project</h3>
+            <ul class="skills-list">
+                <li>PowerBI</li>
+                <li>Data Manipulation</li>
+                <li>Data Modeling</li>
+                <li>Data analysis</li>
+                <li>Data Cleaning</li>
+                <li>Data Visualisation</li>
+                <li>SQL</li>
+                <li>Excel</li>
+            </ul>
+        </div>     
+    </section>
+
+
+</body>
+</html>
