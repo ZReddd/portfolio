@@ -1,11 +1,11 @@
-/* 全局樣式 */
+/* ALL */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;  /* 使用更具設計感的字體 */
+    font-family: 'Montserrat', sans-serif;  
     background-color: #000000be;
     color: #D4D4D4;
-    line-height: 1.6;  /* 增加行高，讓內容更易讀 */
+    line-height: 1.6;  
 }
 
 .menu {
@@ -57,17 +57,17 @@ body, html {
 
 .modal-content {
     background-color: #1e1e1e;
-    padding: 30px; /* 增加一點填充，讓內容更居中 */
+    padding: 30px; 
     border-radius: 12px;
     text-align: center;
-    width: 350px; /* 調整寬度，讓顯示效果更好 */
+    width: 350px; 
     color: #D4D4D4;
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2); /* 添加光影效果 */
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2); 
 }
 
 .modal-content h2 {
     color: #00FFF5; /* Project selection title color */
-    margin-bottom: 25px; /* 增加間距 */
+    margin-bottom: 25px; 
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -81,7 +81,7 @@ body, html {
 }
 
 .project-options li {
-    margin: 15px 0; /* 每個項目之間留出更多空間 */
+    margin: 15px 0; 
 }
 
 .project-options a {
@@ -90,17 +90,17 @@ body, html {
     font-size: 1.1em;
     padding: 12px;
     border-radius: 8px;
-    background-color: #333; /* 按鈕默認顏色 */
+    background-color: #333; 
     display: block;
     transition: background-color 0.3s ease;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* 給按鈕增加輕微陰影 */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
 }
 
 .project-options a:hover {
-    background-color: #00FFF5; /* 懸停時的亮青色背景 */
-    color: #1e1e1e; /* 懸停時字體顏色變深 */
-    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5); /* 懸停時增加陰影效果 */
+    background-color: #00FFF5; 
+    color: #1e1e1e; 
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.5); 
 }
 
 /* Close button */
@@ -112,13 +112,13 @@ body, html {
 }
 
 .close:hover {
-    color: #00FFF5; /* 懸停時的關閉按鈕顏色 */
+    color: #00FFF5; 
 }
 
 
 
 
-/* Header區域 */
+/* Header */
 .hero {
     height: 100vh;
     display: flex;
@@ -189,22 +189,22 @@ body, html {
     font-size: 2em;
 }
 
-/* 其他區域樣式 */
+/* others section */
 #experience, #education {
-    background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%); /* 深黑灰色漸變背景，低調且穩重 */
+    background: linear-gradient(135deg, #121212 0%, #1f1f1f 100%); 
     padding: 60px 20px;
     text-align: center;
-    color: #E0E0E0; /* 保持亮灰色字體，增加可讀性 */
+    color: #E0E0E0; 
 }
 
-/* 標題樣式 */
+/* title */
 h2 {
     font-size: 1.8em;
-    color: #e7edf0; /* 柔和的藍色，依然帶有科技感但更精緻 */
+    color: #e7edf0; 
     margin-bottom: 20px;
     letter-spacing: 0.05em;
-    text-transform: uppercase; /* 強化標題感 */
-    text-shadow: 2px 2px 4px rgba(79, 195, 247, 0.2); /* 柔和的光暈效果，提升質感 */
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(79, 195, 247, 0.2); 
 }
 
 /* Experience and Education Cards */
@@ -214,58 +214,58 @@ h2 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(36, 36, 36, 0.9); /* 使用更深的透明灰色背景，營造層次感 */
-    border-radius: 12px; /* 略增大圓角，讓卡片更精緻 */
-    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.15); /* 柔和的藍色陰影，提升設計感 */
+    background: rgba(36, 36, 36, 0.9); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-item:hover, .education-item:hover {
-    transform: translateY(-5px); /* 懸停時略微上浮 */
-    box-shadow: 0 6px 20px rgba(79, 195, 247, 0.35); /* 懸停時陰影強化，突出質感 */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 20px rgba(79, 195, 247, 0.35); 
 }
 
-/* 圖片樣式 */
+/* image style */
 .experience-img, .education-img {
     width: 200px;
     height: 320px;
     margin-right: 20px;
-    border-radius: 12px; /* 仍保持輕微的圓角，讓圖片看起來更精緻 */
-    object-fit: cover; /* 確保圖片按比例適應框架 */
+    border-radius: 12px; 
+    object-fit: cover; 
 }
 
 .experience-img:hover, .education-img:hover {
-    filter: grayscale(0%) brightness(1); /* 懸停時恢復正常亮度和色彩 */
+    filter: grayscale(0%) brightness(1); 
 }
 
 /* Experience and Education Content */
 .experience-content, .education-content {
     text-align: left;
     flex: 1;
-    color: #D4D4D4; /* 保持柔和的淺灰色字體 */
+    color: #D4D4D4; 
 }
 
-/* 技能列表樣式 */
+
 .skills li {
     display: inline-block;
-    background: rgba(79, 195, 247, 0.1); /* 使用柔和的藍色透明背景 */
-    color: #dce1e3; /* 與標題相呼應的藍色 */
+    background: rgba(79, 195, 247, 0.1); 
+    color: #dce1e3; 
     padding: 6px 10px;
     margin: 5px;
     border-radius: 10px;
-    border: 1px solid #d1dbe1; /* 輕微的邊框，讓元素更精緻 */
+    border: 1px solid #d1dbe1; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skills li:hover {
-    background-color: #4fe3f7; /* 懸停時背景變為亮藍色 */
-    color: #1E1E1E; /* 懸停時文字變為深色 */
+    background-color: #4fe3f7; 
+    color: #1E1E1E; 
 }
 
 /* Experience and Education Titles */
 .experience-item h3, .education-item h3 {
     font-size: 1.2em;
-    color: #d7dee2; /* 與整體一致的藍色，突出但不刺眼 */
+    color: #d7dee2; 
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -274,18 +274,18 @@ h2 {
 /* Text within experience and education sections */
 .experience-item p, .education-item p {
     font-size: 0.9em;
-    color: #B0BEC5; /* 使用柔和的淺灰色，提升科技感 */
+    color: #B0BEC5; 
     line-height: 1.6;
 }
 
 /* Icon styles */
 .experience-item i, .education-item i {
-    color: #e2e9ed; /* 圖標顏色改為柔和的藍色 */
+    color: #e2e9ed; 
     margin-right: 8px;
 }
 
 
-/* Scroll down樣式 */
+/* Scroll down */
 .scroll-down {
     position: absolute;
     bottom: 30px;
@@ -305,23 +305,23 @@ h2 {
 }
 
 .scroll-down i {
-    font-size: 1em; /* 調整箭頭大小 */
-    margin: 5px 0; /* 設置箭頭之間的間距 */
+    font-size: 1em; 
+    margin: 5px 0; 
     color: #D4D4D4;
-    animation: arrowFlow 1.5s infinite ease-in-out; /* 增加動畫效果 */
+    animation: arrowFlow 1.5s infinite ease-in-out; 
 }
 
-/* 第一個箭頭的動畫 */
+
 .scroll-down i:first-child {
-    animation-delay: 0s; /* 第一個箭頭立即開始動畫 */
+    animation-delay: 0s; 
 }
 
-/* 第二個箭頭的動畫 */
+
 .scroll-down i:last-child {
-    animation-delay: 0.75s; /* 第二個箭頭延遲 0.75 秒開始動畫 */
+    animation-delay: 0.75s; 
 }
 
-/* 流動箭頭動畫 */
+/* arrow style */
 @keyframes arrowFlow {
     0% {
         opacity: 0;
@@ -329,11 +329,11 @@ h2 {
     }
     50% {
         opacity: 1;
-        transform: translateY(10px); /* 向下移動 10px */
+        transform: translateY(10px); 
     }
     100% {
         opacity: 0;
-        transform: translateY(20px); /* 最終位置向下 20px */
+        transform: translateY(20px); 
     }
 }
 
@@ -396,13 +396,13 @@ h2 {
 
 .about-me {
     flex: 1.5;
-    margin-right: 20px; /* 控制About Me和GIF之間的距離 */
+    margin-right: 20px; 
     background-color: rgba(30, 28, 33, 0.5);
 }
 
 .about-gif {
     flex: 1;
-    max-width: 300px; /* GIF的最大寬度 */
+    max-width: 300px; 
 }
 
 .about-gif img {
@@ -423,7 +423,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     color: #D4D4D4;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project {
@@ -433,7 +433,7 @@ h2 {
     background-color: #252526;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project h3 {
@@ -463,7 +463,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     color: #161515;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 
@@ -471,7 +471,7 @@ h2 {
     font-size: 3em;
     color: #FFFFFF;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project {
@@ -482,7 +482,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project h3 {
@@ -490,7 +490,7 @@ h2 {
     color: #80CBC4;
     margin-bottom: 15px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project p {
@@ -498,7 +498,7 @@ h2 {
     color: #B0BEC5;
     line-height: 1.6em;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project-img {
@@ -517,13 +517,13 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     color: #D4D4D4;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 .ar-section h2 {
     font-size: 1.5em;
     color: #FFFFFF;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project {
@@ -534,7 +534,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: left;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project h3 {
@@ -542,15 +542,15 @@ h2 {
     color: #80CBC4;
     margin-bottom: 15px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
-    text-decoration: underline; /* 加底線 */
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: underline; 
 }
 
 .project p {
     font-size: 0.95em;
     color: #f4f6f7;
     line-height: 1.6em;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .project-video {
@@ -568,14 +568,14 @@ h2 {
     border-radius: 8px;
     max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .skills-section h3 {
     font-size: 1.8em;
     color: #80CBC4;
     margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .skills-list {
@@ -584,7 +584,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skills-list li {
@@ -595,13 +595,13 @@ h2 {
     border-radius: 15px;
     font-size: 1em;
     transition: background-color 0.3s ease;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .skills-list li:hover {
     background-color: #80CBC4;
     color: #252526;
-    font-family: 'Montserrat', sans-serif; /* 設定字體 */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 
@@ -615,81 +615,81 @@ h2 {
 
 @media (max-width: 768px) {
     .menu-item, .button {
-        font-size: 0.8em; /* 縮小字體 */
-        padding: 5px 10px; /* 縮小內邊距 */
-        margin: 3px 0; /* 減少按鈕間距 */
-        border-radius: 15px; /* 減小圓角半徑 */
+        font-size: 0.8em; 
+        padding: 5px 10px; 
+        margin: 3px 0; 
+        border-radius: 15px; 
     }
 
     .menu-content .button {
-        width: auto; /* 自動適應按鈕寬度 */
+        width: auto; 
     }
     
-    /* 縮小標題字體，防止重疊 */
+   
     .project h3 {
         font-size: 1.5em;
     }
     .hero-content h1 {
-        font-size: 2em; /* 調整標題字體大小 */
+        font-size: 2em; 
     }
     
     .hero-content .subtitle {
-        font-size: 1em; /* 調整副標題字體大小 */
+        font-size: 1em; 
     }
     
     .experience-item, .education-item {
-        flex-direction: column; /* 垂直排列，適合窄螢幕 */
+        flex-direction: column; 
         align-items: center;
     }
 
     .experience-img, .education-img {
-        margin-right: 0; /* 移除 margin */
+        margin-right: 0; 
         margin-bottom: 20px;
-        width: 100px; /* 調整圖片大小 */
+        width: 100px; 
         height: 100px;
     }
 
     .about-container {
-        flex-direction: column; /* 垂直排列，適合窄螢幕 */
+        flex-direction: column; 
     }
     
     .about-me {
-        margin-right: 0; /* 移除左右間距 */
-        margin-bottom: 20px; /* 增加底部間距 */
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
     
     .buttons, .links-buttons {
-        padding: 8px 15px; /* 減少按鈕內部的填充空間 */
-        border-radius: 15px; /* 減小圓角 */
+        padding: 8px 15px; 
+        border-radius: 15px; 
     }
 
     .button {
-        margin: 5px 0; /* 調整按鈕間距 */
-        padding: 8px 15px; /* 減小填充空間 */
+        margin: 5px 0; 
+        padding: 8px 15px; 
     }
 
     .menu {
-        top: 10px; /* 調整菜單位置 */
+        top: 10px; 
         left: 10px;
     }
     
     .menu-item {
-        font-size: 0.9em; /* 調整菜單字體大小 */
+        font-size: 0.9em;
         padding: 8px;
     }
     .project-video {
-        width: 90%; /* 設定影片在手機上更大，以提升觀看體驗 */
-        margin: 15px auto; /* 確保影片在小螢幕上居中顯示 */
+        width: 90%; 
+        margin: 15px auto; 
     }
     
     .small-img {
-        width: 80%; /* 調整小圖片在手機上的寬度 */
-        margin: 15px auto; /* 確保小圖片在手機上居中顯示 */
+        width: 80%; 
+        margin: 15px auto; 
     }
 
     .project-img {
-        width: 80%; /* 調整主要圖片在手機上的寬度 */
-        margin: 15px auto; /* 確保主要圖片在手機上居中顯示 */
+        width: 80%; 
+        margin: 15px auto; 
     }
 }
 
@@ -760,7 +760,7 @@ h2 {
     background-color: #1e1e1e;
     padding: 15px;
     border-radius: 12px;
-    width: 400px;  /* 調整寬度，讓框框不要太大 */
+    width: 400px;  
     max-width: 90%;
     text-align: center;
     color: #D4D4D4;
@@ -787,7 +787,7 @@ h2 {
 }
 
 .about-gif img {
-    max-width: 180px;  /* GIF稍微放大 */
+    max-width: 180px;  
     border-radius: 8px;
 }
 
