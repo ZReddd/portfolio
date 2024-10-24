@@ -75,3 +75,40 @@
     color: #72c4cf; 
     font-weight: bold;
 }
+
+
+/* 媒體查詢 - 手機顯示設置 */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px; 
+        height: auto; 
+    }
+
+    .about-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .about-card {
+        max-width: 70%; 
+        margin-bottom: 20px; 
+    }
+
+    .about-text {
+        max-width: 100%; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .about-text h2 {
+        font-size: 1.8em; 
+    }
+
+    .about-text p {
+        font-size: 1em; 
+    }
+
+    .social-icons a {
+        font-size: 1.2em; 
+    }
+}
