@@ -3,37 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Cheng - AR Project</title>
+    <title>AR Project</title>
+    <link rel="icon" href="images/dinosaur.gif" >
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="link-section.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Menu Button -->
-<nav class="menu">
-    <div class="menu-content">
-        <a href="index.html#home" class="menu-item">Home</a>
-        <a href="index.html#experience" class="menu-item">Experience</a>
-        <a href="about.html" class="menu-item">About Me</a>
-        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> 
-    </div>
-</nav>
 
+    <!-- Placeholder for dynamically loaded menu -->
+    <div id="menu-placeholder"></div>
 
-<div id="projects-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Select a Project</h2>
-        <a href="data-visualisation.html" class="button">Adelaide Age Structure Data Visualisation</a>
-        <a href="Thesis.html" class="button">Thesis</a>
-        <a href="AR.html" class="button">AR software project</a>
-        <a href="AWL.html" class="button">Financial Data Visualisation</a>
-        <a href="Map.html" class="button">Animal Rescue Mapping Visualisation</a>
-    </div>
-</div>
-<script src="script.js"></script>
-    
     <!-- AR Project Section -->
     <section class="ar-section">
         <h2>Augmented Reality Project</h2>
@@ -47,20 +28,22 @@
                 <br><br>
                 This has significantly reduced the school's costs for anatomical models.
             </p>
-            <!-- Video 1 -->
+            <!-- Video 1 showcasing 3D model interaction -->
             <video controls class="project-video">
                 <source src="images/AR2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p>
-               Additionally, students can interact with each organ model by opening, closing, and rotating the 3D representations. This hands-on experience enhances their understanding by allowing them to observe organs from multiple angles. Watch the videos below to see how students can control the visibility and orientation of each organ model.
+                Additionally, students can interact with each organ model by opening, closing, and rotating the 3D representations. This hands-on experience enhances their understanding by allowing them to observe organs from multiple angles. Watch the videos below to see how students can control the visibility and orientation of each organ model.
             </p>
-            <!-- Video 2 -->
+            <!-- Video 2 with additional 3D model interactions -->
             <video controls class="project-video">
                 <source src="images/AR1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>    
+
+        <!-- Skills used in this project -->
         <div class="skills-section">
             <h3>Skills Used in This Project</h3>
             <ul class="skills-list">
@@ -76,23 +59,11 @@
             </ul>
         </div>
     </section>
-            <!-- link section -->
-            <section id="links-section">
-                <div class="links-container">
-                    <div class="link-category">
-                        <h3>Projects</h3>
-                        <a href="data-visualisation.html">Adelaide Age Structure Data Visualisation</a>
-                        <a href="Thesis.html">Thesis</a>
-                        <a href="AR.html">AR software project</a>
-                        <a href="AWL.html">Financial Data Visualisation</a>
-                        <a href="Map.html">Animal Rescue Mapping Visualisation</a>
-                    </div>
-                    <div class="link-category">
-                        <h3>Contact</h3>
-                        <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank">LinkedIn</a>
-                    </div>
-                </div>
-            </section>
-    
+
+    <!-- Placeholder for dynamically loaded link section -->
+    <div id="links-section-placeholder"></div>
+
+    <!-- Load external JavaScript file for dynamic content loading -->
+    <script src="loadContent.js"></script>
 </body>
 </html>

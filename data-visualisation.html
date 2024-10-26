@@ -3,38 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Cheng - Data Visualization</title>
+    <title>City of Adelaide’s Age Structure</title>
+    <link rel="icon" href="images/dinosaur.gif" >
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="link-section.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Menu Button -->
-<nav class="menu">
-    <div class="menu-content">
-        <a href="index.html#home" class="menu-item">Home</a>
-        <a href="index.html#experience" class="menu-item">Experience</a>
-        <a href="about.html" class="menu-item">About Me</a>
-        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> 
-    </div>
-</nav>
 
+    <!-- Placeholder for dynamically loaded menu -->
+    <div id="menu-placeholder"></div>
 
-<div id="projects-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Select a Project</h2>
-        <a href="data-visualisation.html" class="button">Adelaide Age Structure Data Visualisation</a>
-        <a href="Thesis.html" class="button">Thesis</a>
-        <a href="AR.html" class="button">AR software project</a>
-        <a href="AWL.html" class="button">Financial Data Visualisation</a>
-        <a href="Map.html" class="button">Animal Rescue Mapping Visualisation</a>
-    </div>
-</div>
-<script src="script.js"></script>
-     <!-- Data Visualization Section -->
-     <section class="data-visualisation-section">
+    <!-- Data Visualization Section -->
+    <section class="data-visualisation-section">
         <h2>Data Report</h2>
         
         <div class="project"> 
@@ -47,37 +29,27 @@
             <img src="images/PowerBI-project1.JPG" alt="City of Adelaide Age Structure" class="project-img">
             <img src="images/PowerBI-project1-1.JPG" alt="City of Adelaide Age Structure" class="project-img">
         </div>  
+
+        <!-- Skills used in this project -->
         <div class="skills-section">
             <h3>Skills Used in This Project</h3>
             <ul class="skills-list">
                 <li>PowerBI</li>
                 <li>Data Manipulation</li>
                 <li>Data Modeling</li>
-                <li>Data analysis</li>
+                <li>Data Analysis</li>
                 <li>Data Cleaning</li>
-                <li>Data Visualisation</li>
+                <li>Data Visualization</li>
                 <li>SQL</li>
                 <li>Excel</li>
             </ul>
         </div>     
     </section>
-        <!-- link section -->
-        <section id="links-section">
-            <div class="links-container">
-                <div class="link-category">
-                    <h3>Projects</h3>
-                    <a href="data-visualisation.html">Adelaide Age Structure Data Visualisation</a>
-                    <a href="Thesis.html">Thesis</a>
-                    <a href="AR.html">AR software project</a>
-                    <a href="AWL.html">Financial Data Visualisation</a>
-                    <a href="Map.html">Animal Rescue Mapping Visualisation</a>
-                </div>
-                <div class="link-category">
-                    <h3>Contact</h3>
-                    <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </section>
 
+    <!-- Placeholder for dynamically loaded link section -->
+    <div id="links-section-placeholder"></div>
+
+    <!-- Load external JavaScript file for dynamic content loading -->
+    <script src="loadContent.js"></script>
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Cheng - Portfolio</title>
+    <title>Home</title>
+    <link rel="icon" href="images/dinosaur.gif" >
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="link-section.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -12,34 +13,13 @@
 </head>
 <body>
     
-<!-- Menu Button -->
-<nav class="menu">
-    <div class="menu-content">
-        <a href="#home" class="menu-item">Home</a>
-        <a href="#experience" class="menu-item">Experience</a>
-        <a href="about.html" class="menu-item">About Me</a>
-        <a href="#projects" class="menu-item" id="projects-btn">Projects</a> 
-    </div>
-</nav>
-
-
-<div id="projects-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Select a Project</h2>
-        <a href="data-visualisation.html" class="button">Adelaide Age Structure Data Visualisation</a>
-        <a href="Thesis.html" class="button">Thesis</a>
-        <a href="AR.html" class="button">AR software project</a>
-        <a href="AWL.html" class="button">Financial Data Visualisation</a>
-        <a href="Map.html" class="button">Animal Rescue Mapping Visualisation</a>
-    </div>
-</div>
-<script src="script.js"></script>
+    <!-- Placeholder for dynamically loaded menu -->
+    <div id="menu-placeholder"></div>
 
     <!-- Header Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Andrew Cheng.</h1>
+            <h1>Hi, I'm Andrew Cheng</h1>
             <p class="subtitle">Software Engineer | Data Analyst | IT Support</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -54,119 +34,100 @@
 
    <!-- Main Content -->
    <div class="main-content">
+    
     <!-- Experience Section -->
     <section id="experience" class="left-section">
         <h2>Experience</h2>
         <div class="experience-item">
-            <!-- <img src="images/12.jpg" alt="Experience Image 1" class="experience-img"> -->
             <div class="experience-content">
                 <h3>Technical Officer / Senior Research Assistant</h3>
-                <p>The University of Queensland & Queensland Childrens Hospital</p>
-                <p><i class="fas fa-map-marker-alt"></i>Brisbane, Australia | Feb 2024 - Current</p>
-
-             <!-- achievements -->
-        <div class="achievements">
-            <h4>🌟Achievements</h4>
-            <ul>
-                <li>Developed web applications for Movement Behavior Questionnaire, enhancing data visualization.</li>
-                <li>Provided accessible data to support a clearer understanding of children's behavior and needs.</li>
-            </ul>
-            <ul class="skills">
-                <li>Node.js</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Chart.js</li>
-                <li>Express.js</li>
-                <li>JavaScript</li>
-                <li>Project management</li>
-                <li>Data Visualization</li>
-            </ul>
+                <p>The University of Queensland & Queensland Children's Hospital</p>
+                <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | Feb 2024 - Current</p>
+                <div class="achievements">
+                    <h4>🌟 Achievements</h4>
+                    <ul>
+                        <li>Developed web applications for Movement Behavior Questionnaire, enhancing data visualization.</li>
+                        <li>Provided accessible data to support a clearer understanding of children's behavior and needs.</li>
+                    </ul>
+                    <ul class="skills">
+                        <li>Node.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Chart.js</li>
+                        <li>Express.js</li>
+                        <li>JavaScript</li>
+                        <li>Project Management</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+
         <div class="experience-item">
-            <!-- <img src="images/powerBI.gif" alt="Experience GIF 2" class="experience-img"> -->
             <div class="experience-content">
                 <h3>Data Analyst</h3>
                 <p>Desygner</p>
-                <p><i class="fas fa-map-marker-alt"></i>Gold Coast, Australia | Jan 2024 - Mar 2024</p>
-
-             <!-- achievements -->
-        <div class="achievements">
-            <h4>🌟Achievements</h4>
-            <ul>
-                <li>Perform data cleansing to significantly improve the quality of the database</li>
-                <li>Create data reports to improve business decisions </li>
-            </ul>
-            <ul class="skills">
-                <li>MySQL</li>
-                <li>Data Visualization</li>
-                <li>Data governance</li>
-                <li>PowerBI</li>
-                <li>Data Cleaning</li>
-                <li>Python</li>
-                <li>Jira</li>
-                <li>Excel</li>
-            </ul>
+                <p><i class="fas fa-map-marker-alt"></i> Gold Coast, Australia | Jan 2024 - Mar 2024</p>
+                <div class="achievements">
+                    <h4>🌟 Achievements</h4>
+                    <ul>
+                        <li>Performed data cleansing to significantly improve the quality of the database.</li>
+                        <li>Created data reports to improve business decisions.</li>
+                    </ul>
+                    <ul class="skills">
+                        <li>MySQL</li>
+                        <li>Data Visualization</li>
+                        <li>Data Governance</li>
+                        <li>PowerBI</li>
+                        <li>Data Cleaning</li>
+                        <li>Python</li>
+                        <li>Jira</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+
         <div class="experience-item">
-            <!-- <img src="images/pccu.jpg" alt="Experience GIF 3" class="experience-img"> -->
             <div class="experience-content">
-                <h3></i>IT Support Specialist</h3>
-                <p></i>Cultural University</p>
-                <p><i class="fas fa-map-marker-alt"></i>Taipei, Taiwan | Dec 2017 - July 2021</p>
-
-        <div class="achievements">
-            <h4>🌟Achievements</h4>
-            <ul>
-                <li>Managed university-wide computer systems and projectors, reducing breakdowns.</li>
-                <li>Facilitated the installation and maintenance of hardware and software.</li>
-            </ul>
-            <ul class="skills">
-                <li>System Maintenance</li>
-                <li>Troubleshooting</li>
-                <li>Hardware Installation</li>
-                <li>Technical Support</li>
-                <li>Software Installation</li>
-            </ul>
+                <h3>IT Support Specialist</h3>
+                <p>Cultural University</p>
+                <p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan | Dec 2017 - July 2021</p>
+                <div class="achievements">
+                    <h4>🌟 Achievements</h4>
+                    <ul>
+                        <li>Managed university-wide computer systems and projectors, reducing breakdowns.</li>
+                        <li>Facilitated the installation and maintenance of hardware and software.</li>
+                    </ul>
+                    <ul class="skills">
+                        <li>System Maintenance</li>
+                        <li>Troubleshooting</li>
+                        <li>Hardware Installation</li>
+                        <li>Technical Support</li>
+                        <li>Software Installation</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </section>
 
     <!-- Education Section -->
     <section id="education">
-        <h2><i class="fas fa-graduation-cap"></i>Education</h2>
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
         <div class="education-item">
             <img src="images/UQ.png" alt="Education Image" class="experience-img">
             <div class="education-content">
                 <h3>The University of Queensland</h3>
                 <p>Master of Computer Science (Management)</p>
                 <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | 2022 - 2024</p>
+            </div>
         </div>
-    </div>
-</div>
     </section>
-</body>
 
+    <!-- Placeholder for dynamically loaded link section -->
+    <div id="links-section-placeholder"></div>
 
-<section id="links-section">
-    <div class="links-container">
-        <div class="link-category">
-            <h3>Projects</h3>
-            <a href="data-visualisation.html">Adelaide Age Structure Data Visualisation</a>
-            <a href="Thesis.html">Thesis</a>
-            <a href="AR.html">AR software project</a>
-            <a href="AWL.html">Financial Data Visualisation</a>
-            <a href="Map.html">Animal Rescue Mapping Visualisation</a>
-        </div>
-        <div class="link-category">
-            <h3>Contact</h3>
-            <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</section>
+    <!-- Load external JavaScript file for dynamic content loading -->
+    <script src="loadContent.js"></script>
 </body>
 </html>
