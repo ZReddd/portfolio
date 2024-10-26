@@ -77,7 +77,7 @@
 }
 
 
-/* 媒體查詢 - 手機顯示設置 */
+
 @media (max-width: 768px) {
     .about-section {
         padding: 20px; 
