@@ -1,5 +1,6 @@
 #links-section {
     background-color: #e9eef2;
+    background: url('images/space.gif') no-repeat center center/cover;
     padding: 40px;
     display: flex;
     justify-content: flex-start; 
@@ -19,7 +20,7 @@
 
 .link-category h3 {
     font-size: 18px;
-    color: #000;
+    color: #e4dddd;
 }
 
 .link-category a {

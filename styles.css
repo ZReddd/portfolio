@@ -274,10 +274,6 @@ body, html {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.skills li:hover {
-    background-color: #00FFF5;
-    color: #1E1E1E;
-}
 
 /* Back to Top Button */
 #back-to-top {
@@ -285,13 +281,13 @@ body, html {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00FFF5;
-    color: #1E1E1E;
+    background-color: #070617;
+    color: #7a95e4;
     border: none;
     border-radius: 50%;
-    padding: 8px; /* Smaller padding */
+    padding: 12px; /* Smaller padding */
     cursor: pointer;
-    font-size: 1em; /* Smaller font size */
+    font-size: 0.5em; /* Smaller font size */
     transition: background-color 0.3s ease;
 }
 
