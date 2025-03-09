@@ -100,14 +100,17 @@ body, html {
 }
 
 .social-links a:hover {
-    color: #00FFF5;
+    color: #182fca;
 }
 
 /* Scroll Down Arrow */
 .scroll-down {
     position: absolute;
     bottom: 20px;
-    animation: bounce 2s infinite;
+    animation: bounce 1s infinite;
+}
+.scroll-down .scroll-link {
+    color: #e8dbdb; 
 }
 
 @keyframes bounce {
@@ -188,7 +191,7 @@ body, html {
 }
 
 .project-card .button:hover {
-    background-color: #7375c9;
+    background-color: #c9a273;
 }
 
 /* Experience Section */
@@ -211,7 +214,7 @@ body, html {
     bottom: 0;
     left: 50%;
     width: 2px;
-    background: #e0e0e0; /* Light line */
+    background: #141313; /* Light line */
     margin-left: -1px;
 }
 
@@ -223,7 +226,7 @@ body, html {
     border-radius: 12px;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e0e0e0; /* Light border */
+    border: 1px solid #0d0d0d; /* Light border */
 }
 
 .timeline-item:hover {
@@ -404,7 +407,7 @@ body, html {
 .skills-section {
     margin: 20px auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(249, 246, 246, 0.8);
     padding: 30px;
     border-radius: 12px;
     max-width: 800px;
@@ -428,18 +431,18 @@ body, html {
 
 .skills-list li {
     background: rgba(79, 195, 247, 0.1);
-    color: #333;
+    color: #141414;
     padding: 8px 12px;
     margin: 8px;
     border-radius: 10px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #1d1b1b;
     transition: background-color 0.3s ease, color 0.3s ease;
     transform: scale(1);
     transition: transform 0.2s ease-in-out;
 }
 
 .skills-list li:hover {
-    background-color: #d7d4e4;
+    background-color: #7375c9;
     color: #1E1E1E;
     transform: scale(1.1);
 }
