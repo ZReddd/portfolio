@@ -11,48 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Placeholder for dynamically loaded menu -->
     <div id="menu-placeholder"></div>
 
-   <!-- Data Mining Project Section -->
-<section class="AWL-section">
-    <h2>E. coli Gene Classification Project</h2>
-    
-    <!-- Project Overview -->
-    <div class="project"> 
-        <h3>Project Overview</h3>
-        <p>
-            This project focuses on classifying genes in *E. coli* bacteria based on their likelihood of having a "cell communication" function. The dataset consists of 1500 samples with 103 numerical features and 3 nominal features per gene, as well as a target label indicating the gene's functionality.
-        </p>
-        <p>
-            Multiple machine learning models were tested, including K-Nearest Neighbors (KNN), Decision Trees, and Random Forest, to identify the most accurate classification method. The KNN model with K=13 showed the highest accuracy at 95%, but Decision Trees and Random Forest also contributed valuable insights into the dataset.
-        </p>
-    </div>
-    
-    
-    <!-- Confusion Matrix Section -->
-    <div class="project"> 
-        <h3>Confusion Matrix and Model Metrics</h3>
-        <p>This image shows the confusion matrix and performance metrics for the KNN model. The model achieved a precision and recall of 0.97 for the negative class (0) and 0.80 for the positive class (1), demonstrating strong overall performance.</p>
-        <img src="images/confusion_matrix.png" alt="Confusion Matrix and Model Metrics" class="project-img"style="width: 40%; margin: 10px auto;">
-    </div>
+    <!-- Data Mining Project Section -->
+    <section class="projects-section">
+        <h2>E. coli Gene Classification Project</h2>
+        
+        <!-- Project Overview -->
+        <div class="project"> 
+            <h3>Project Overview</h3>
+            <p>
+                This project focuses on classifying genes in *E. coli* bacteria based on their likelihood of having a "cell communication" function. The dataset consists of 1500 samples with 103 numerical features and 3 nominal features per gene, as well as a target label indicating the gene's functionality.
+            </p>
+            <p>
+                Multiple machine learning models were tested, including K-Nearest Neighbors (KNN), Decision Trees, and Random Forest, to identify the most accurate classification method. The KNN model with K=13 showed the highest accuracy at 95%, but Decision Trees and Random Forest also contributed valuable insights into the dataset.
+            </p>
+        </div>
+        
+        <!-- Confusion Matrix Section -->
+        <div class="project"> 
+            <h3>Confusion Matrix and Model Metrics</h3>
+            <p>This image shows the confusion matrix and performance metrics for the KNN model. The model achieved a precision and recall of 0.97 for the negative class (0) and 0.80 for the positive class (1), demonstrating strong overall performance.</p>
+            <img src="images/confusion_matrix.png" alt="Confusion Matrix and Model Metrics" class="project-img"style="width: 40%; margin: 10px auto;">
+        </div>
 
-    <!-- Dataset Preview Section -->
-    <div class="project"> 
-        <h3>Dataset Preview</h3>
-        <p>This image provides a preview of the dataset, displaying the first few rows and the 103 numerical features. The dataset includes missing values, which were handled through imputation in the preprocessing stage to ensure robust model training.</p>
-        <img src="images/dataset_preview.jpg" alt="Dataset Preview" class="project-img">
-    </div>
+        <!-- Dataset Preview Section -->
+        <div class="project"> 
+            <h3>Dataset Preview</h3>
+            <p>This image provides a preview of the dataset, displaying the first few rows and the 103 numerical features. The dataset includes missing values, which were handled through imputation in the preprocessing stage to ensure robust model training.</p>
+            <img src="images/dataset_preview.jpg" alt="Dataset Preview" class="project-img">
+        </div>
 
-    <!-- Prediction Results Section -->
-    <div class="project"> 
-        <h3>Prediction Results</h3>
-        <p>The final predictions for test data are presented here. The binary outcomes (0 and 1) indicate whether each gene is classified as having a cell communication function, based on the trained KNN model.</p>
-        <img src="images/predictions.jpg" alt="Prediction Results" class="project-img-small">
-    </div>
-</section>
-
+        <!-- Prediction Results Section -->
+        <div class="project"> 
+            <h3>Prediction Results</h3>
+            <p>The final predictions for test data are presented here. The binary outcomes (0 and 1) indicate whether each gene is classified as having a cell communication function, based on the trained KNN model.</p>
+            <img src="images/predictions.jpg" alt="Prediction Results" class="project-img-small">
+        </div>
 
         <!-- Skills used in this project -->
         <div class="skills-section">

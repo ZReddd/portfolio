@@ -1,10 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="images/dinosaur.gif" >
+    <title>Andrew Cheng - Portfolio</title>
+    <link rel="icon" href="images/dinosaur.gif">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="link-section.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -12,122 +12,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    
-    <!-- Placeholder for dynamically loaded menu -->
-    <div id="menu-placeholder"></div>
+    <!-- Menu Button -->
+    <nav class="menu">
+        <div class="menu-content">
+            <a href="index.html#home" class="menu-item">Home</a>
+            <a href="index.html#projects" class="menu-item">Projects</a>
+            <a href="about.html" class="menu-item">About Me</a>
+            <a href="index.html#experience" class="menu-item">Experience</a>
+        </div>
+    </nav>
 
     <!-- Header Section -->
     <header id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Hi, I'm Andrew Cheng</h1>
-            <p class="subtitle">Software Engineer | Data Analyst | IT Support</p>
+            <h1 class="animated-text">Hi, I'm Andrew Cheng</h1>
+            <p class="subtitle">Software Engineer </p>
+            <p class="subtitle"> IT Support</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/andrewcheng887/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
         <div class="scroll-down">
-            <a href="#experience">
+            <a href="#projects" class="scroll-link">
                 <i class="fas fa-angle-double-down"></i>
             </a>
         </div>
     </header>
 
-   <!-- Main Content -->
-   <div class="main-content">
-    
-    <!-- Experience Section -->
-    <section id="experience" class="left-section">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <div class="experience-content">
-                <h3>Technical Officer / Senior Research Assistant</h3>
-                <p>The University of Queensland & Queensland Children's Hospital</p>
-                <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | Feb 2024 - Current</p>
-                <div class="achievements">
-                    <h4>🌟 Achievements</h4>
-                    <ul>
-                        <li>Developed web applications for Movement Behavior Questionnaire, enhancing data visualization.</li>
-                        <li>Provided accessible data to support a clearer understanding of children's behavior and needs.</li>
-                    </ul>
-                    <ul class="skills">
-                        <li>Node.js</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Chart.js</li>
-                        <li>Express.js</li>
-                        <li>JavaScript</li>
-                        <li>Project Management</li>
-                        <li>Data Visualization</li>
-                    </ul>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2>PROJECTS</h2>
+            <div class="project-grid">
+                <!-- Thesis Project -->
+                <div class="project-card">
+                    <img src="images/FFT.JPG" alt="Thesis Project">
+                    <h3>Thesis</h3>
+                    <h2>(CUDA GPU acceleration)</h2>
+                    <a href="Thesis.html" class="button">View Project</a>
+                </div>
+
+                <!-- AR Software Project -->
+                <div class="project-card">
+                    <img src="images/AR.png" alt="AR Software Project">
+                    <h3>AR Pattern Recognition for Education</h3>
+                    <h2>(Interactive 3D models of human organs)</h2>
+                    <a href="AR.html" class="button">View Project</a>
+                </div>
+
+                    <!-- AR Software Project -->
+                    <div class="project-card">
+                        <img src="images/MBQ1.png" alt="AR Software Project">
+                        <h3>Full Stack Development</h3>
+                        <h2>(Web-Based Research Tool: Movement Behavior Questionnaire)</h2>
+                        <a href="MBQ.html" class="button">View Project</a>
+                    </div>
+
+                <!-- Financial Data Visualisation -->
+                <div class="project-card">
+                    <img src="images/AWL_report1.JPG" alt="Financial Data Visualisation">
+                    <h3>Data Visualisation</h3>
+                    <h2>(AWL's Annual Report)</h2>
+                  
+                    <a href="AWL.html" class="button">View Project</a>
+                </div>
+
+                <!-- Data Mining Project -->
+                <div class="project-card">
+                    <img src="images/dataset_preview.jpg" alt="Data Mining Project">
+                    <h3>Data Mining </h3>
+                    <h2>(E. coli Gene Classification)</h2>
+                    <a href="data_mining.html" class="button">View Project</a>
+                </div>
+
+                <!-- Cloud Computing Project -->
+                <div class="project-card">
+                    <img src="images/docker_compose.png" alt="Cloud Computing Project">
+                    <h3>Cloud Computing Project</h3>
+                    <h2>(web-based application using Docker & GCP)</h2>
+                  
+                    <a href="cloud.html" class="button">View Project</a>
                 </div>
             </div>
-        </div>
-
-        <div class="experience-item">
-            <div class="experience-content">
-                <h3>Data Analyst</h3>
-                <p>Desygner</p>
-                <p><i class="fas fa-map-marker-alt"></i> Gold Coast, Australia | Jan 2024 - Mar 2024</p>
-                <div class="achievements">
-                    <h4>🌟 Achievements</h4>
-                    <ul>
-                        <li>Performed data cleansing to significantly improve the quality of the database.</li>
-                        <li>Created data reports to improve business decisions.</li>
-                    </ul>
-                    <ul class="skills">
-                        <li>MySQL</li>
-                        <li>Data Visualization</li>
-                        <li>Data Governance</li>
-                        <li>PowerBI</li>
-                        <li>Data Cleaning</li>
-                        <li>Python</li>
-                        <li>Jira</li>
-                        <li>Excel</li>
-                    </ul>
+                            <!-- Cloud Computing Project -->
+                <div class="project-card">
+                    <img src="images/docker_compose.png" alt="Cloud Computing Project">
+                    <h3>Cloud Computing Project</h3>
+                    <h2>(web-based application using Docker & GCP)</h2>
+                  
+                    <a href="cloud.html" class="button">View Project</a>
                 </div>
             </div>
-        </div>
 
-        <div class="experience-item">
-            <div class="experience-content">
-                <h3>IT Support Specialist</h3>
-                <p>Cultural University</p>
-                <p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan | Dec 2017 - July 2021</p>
-                <div class="achievements">
-                    <h4>🌟 Achievements</h4>
-                    <ul>
-                        <li>Managed university-wide computer systems and projectors, reducing breakdowns.</li>
-                        <li>Facilitated the installation and maintenance of hardware and software.</li>
-                    </ul>
-                    <ul class="skills">
-                        <li>System Maintenance</li>
-                        <li>Troubleshooting</li>
-                        <li>Hardware Installation</li>
-                        <li>Technical Support</li>
-                        <li>Software Installation</li>
-                    </ul>
+            
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Technical Officer (Software)</h3>
+                        <p>The University of Queensland & Queensland Children's Hospital</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | March 2024 - Current</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Analyst</h3>
+                        <p>Desygner</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Gold Coast, Australia | Jan 2024 - Mar 2024</p>
+                       
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>IT Support Specialist</h3>
+                        <p>Cultural University</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan | Dec 2017 - July 2021</p>
+                    
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <div class="education-item">
-            <img src="images/UQ.png" alt="Education Image" class="experience-img">
-            <div class="education-content">
-                <h3>The University of Queensland</h3>
-                <p>Master of Computer Science (Management)</p>
-                <p><i class="fas fa-map-marker-alt"></i> Brisbane, Australia | 2022 - 2024</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Placeholder for dynamically loaded link section -->
-    <div id="links-section-placeholder"></div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Load external JavaScript file for dynamic content loading -->
     <script src="loadContent.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
