@@ -1,6 +1,6 @@
 #links-section {
-    background-color: #e9eef2;
-    background: url('images/space.gif') no-repeat center center/cover;
+    background-color: #0c0c0c;
+    /* background: url('images/footer.jpg') no-repeat center center/cover; */
     padding: 40px;
     display: flex;
     justify-content: flex-start; 
@@ -20,12 +20,12 @@
 
 .link-category h3 {
     font-size: 18px;
-    color: #e4dddd;
+    color: #e8e1e1;
 }
 
 .link-category a {
     display: block;
-    color: #585dc5;
+    color: #a7a7b1;
     text-decoration: none;
     margin: 5px 0;
     font-size: 16px;
