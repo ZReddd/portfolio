@@ -200,8 +200,13 @@ body, html {
 .experience-section {
     padding: 80px 20px;
     text-align: center;
-    background: #d0cea359; /* Light background */
+    background: #311b3e; 
 }
+
+.experience-section h2 {
+    color: #eee7e7; 
+}
+
 
 .timeline {
     position: relative;
@@ -215,25 +220,27 @@ body, html {
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 2px;
-    background: #141313; /* Light line */
-    margin-left: -1px;
+    width: 8px; 
+    background: #d8bcbc; 
+    margin-left: -2px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .timeline-item {
     padding: 20px 40px;
     position: relative;
     width: 50%;
-    background: #ffffff;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    background: linear-gradient(145deg, #ffffff, #240b2b); 
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 2px solid #181717; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #0d0d0d; /* Light border */
 }
 
 .timeline-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .timeline-item:nth-child(odd) {
@@ -245,14 +252,14 @@ body, html {
 }
 
 .timeline-content {
-    padding: 20px;
+    padding: 10px 8px;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 8px;
     position: relative;
 }
 
 .timeline-content h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333;
     margin-bottom: 10px;
 }
