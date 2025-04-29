@@ -200,7 +200,7 @@ body, html {
 .experience-section {
     padding: 80px 20px;
     text-align: center;
-    background: #311b3e; 
+    background: linear-gradient(145deg, #ffffff, #240b2b); 
 }
 
 .experience-section h2 {
@@ -221,7 +221,7 @@ body, html {
     bottom: 0;
     left: 50%;
     width: 8px; 
-    background: #d8bcbc; 
+    background: #0e0d0d; 
     margin-left: -2px; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
