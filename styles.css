@@ -200,7 +200,8 @@ body, html {
 .experience-section {
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(145deg, #ffffff, #240b2b); 
+    background: url('images/space.gif') no-repeat center center/cover;
+    /* background: linear-gradient(145deg, #ffffff, #240b2b);  */
 }
 
 .experience-section h2 {
@@ -221,7 +222,7 @@ body, html {
     bottom: 0;
     left: 50%;
     width: 8px; 
-    background: #0e0d0d; 
+    background: #e9e2e2; 
     margin-left: -2px; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
@@ -230,10 +231,10 @@ body, html {
     padding: 20px 40px;
     position: relative;
     width: 50%;
-    background: linear-gradient(145deg, #ffffff, #240b2b); 
+    background: linear-gradient(145deg, #ffffff, #9a9b91); 
     border-radius: 16px;
     margin-bottom: 30px;
-    border: 2px solid #181717; 
+    border: 2px solid #f8f5f5; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
