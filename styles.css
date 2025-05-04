@@ -200,7 +200,7 @@ body, html {
 .experience-section {
     padding: 80px 20px;
     text-align: center;
-    background: url('images/space.gif') no-repeat center center/cover;
+    background: url('images/moon3.gif') no-repeat center center/cover;
     /* background: linear-gradient(145deg, #ffffff, #240b2b);  */
 }
 
@@ -353,7 +353,7 @@ body, html {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .projects-section {
-    background: url('images/landscape.jpg') no-repeat center center/cover;
+    background: url('images/moon.jpg') no-repeat center center/cover;
     padding: 50px 0;
     text-align: center;
     color: #fff; 
