@@ -215,6 +215,21 @@ body, html {
     margin: 0 auto;
 }
 
+.timeline-content {
+    display: grid;
+    place-items: center; 
+}
+
+.timeline-content .experience-icon {
+    width: 60px;
+    height: auto;
+    margin: 10px 0;
+}
+.dual-logos {
+    display: flex;
+    gap: 15px; 
+}
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -231,7 +246,7 @@ body, html {
     padding: 20px 40px;
     position: relative;
     width: 50%;
-    background: linear-gradient(145deg, #ffffff, #9a9b91); 
+    background: #0c0c0c; 
     border-radius: 16px;
     margin-bottom: 30px;
     border: 2px solid #f8f5f5; 
