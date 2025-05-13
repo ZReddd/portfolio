@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Price Compare</title>
+    <link rel="icon" href="images/dinosaur.gif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="link-section.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Placeholder for dynamically loaded menu -->
+    <div id="menu-placeholder"></div>
+
+    <!-- AP Price Compare Section -->
+    <section class="projects-section">
+        <h2>AP Price Compare</h2>
+        
+        <!-- Project Overview -->
+        <div class="project"> 
+            <h3>Project Overview</h3>
+            <p>
+                AP Price Compare is a full-stack web application that helps Australian consumers compare grocery prices across major supermarkets. 
+                The Vue.js frontend provides a responsive interface while the .NET 8 backend handles data processing and API services.
+                <br><br>
+                This ongoing project currently supports price comparison for thousands of products with weekly specials tracking.
+            </p>
+        </div>
+
+        <!-- Vue.js Frontend Section -->
+        <div class="project">
+            <h3>Vue.js Frontend Implementation</h3>
+            <p>
+                The frontend is built with Vue.js using a component-based architecture. Key UI elements like the sidebar, product cards, 
+                and buttons are modular components composed in App.vue. Tailwind CSS provides utility-first styling for rapid development 
+                and consistent design across the application.
+            </p>
+
+             <p class="image-caption">
+                The main application interface showing price comparison and the Vue component code structure with Tailwind CSS classes.
+            </p>
+            <div class="image-group">
+                <img src="images/app.JPG" alt="Application Main Page" class="project-img">
+                <img src="images/vue.jpg" alt="Vue Component Code" class="project-img">
+            </div>
+
+        </div>
+
+<!-- .NET Backend Section -->
+<div class="project">
+    <h3>.NET 8 Backend with Real-time Price API</h3>
+    <p>
+        The backend system is built with .NET 8 and fully managed through Swagger UI, featuring real-time supermarket price integration:
+    </p>
+   <p><strong>Dynamic API Endpoints:</strong></p>
+    <p><strong>•</strong><code>GET http://localhost:[port]/api/Coles/{product_id}/detail</code> - Retrieves full product details</p>
+    <p><strong>•</strong><code>GET http://localhost:[port]/api/Coles/{product_id}/price</code> - Returns current pricing data</p>
+    
+    <p><strong>•</strong>Automatic price synchronization with supermarket databases</p>
+    <p><strong>•</strong>Swagger-powered API documentation and testing interface</p>
+    <p><strong>•</strong>Entity Framework Core for efficient data operations</p>
+    
+    <div class="image-grid">
+        <!-- Swagger Documentation Images -->
+        <div class="image-item">
+            <p>Swagger UI showing all available API endpoints</p>
+            <img src="images/swagger.jpg" alt="Swagger API Home" class="project-img">
+                </div>
+        <div class="image-item">
+            <p>Testing the /api/Coles/{id}/detail endpoint in Swagger</p>
+            <img src="images/swagger2.jpg" alt="Product Detail Endpoint" class="project-img">
+                </div>
+        <div class="image-item"> 
+            <p>Executing /api/Coles/{id}/price endpoint with sample response</p>
+            <img src="images/swagger3.jpg" alt="Price Endpoint" class="project-img">
+                </div>
+        <div class="image-item">
+            <p>Swagger's automatically generated API schema documentation</p>
+             <img src="images/swagger4.jpg" alt="API Schema" class="project-img">
+                </div>
+        <div class="image-item">
+            <p>.NET API Controller handling products endpoints</p>
+            <img src="images/APII.JPG" alt="API Response" class="project-img">
+                </div>
+        <div class="image-item">
+            <p>Price service implementation with real-time update logic</p>
+            <img src="images/API2.JPG" alt="Service Layer" class="project-img">
+                </div>
+            </div>
+        </div>
+
+<!-- Project Status -->
+<div class="project">
+    <h3>Current Project Status</h3>
+    <p>This project is actively under development with ongoing improvements:</p>
+    
+    <p><strong>•</strong> Expanding product coverage to include Aldi supermarket</p>
+    <p><strong>•</strong> Implementing user accounts and personalized recommendations</p>
+    <p><strong>•</strong> Adding price history tracking and trend analysis</p>
+    <p><strong>•</strong> Developing mobile app version using Capacitor</p>
+</div>
+
+        <!-- Skills used in this project -->
+        <div class="skills-section">
+            <h3>Technical Stack</h3>
+            <ul class="skills-list">
+                <li>Vue.js 3</li>
+                <li>.NET 8</li>
+                <li>Entity Framework Core</li>
+                <li>Tailwind CSS</li>
+                <li>Swagger/OpenAPI</li>
+                <li>RESTful APIs</li>
+                <li>SQL Server</li>
+                <li>Component-Based Architecture</li>
+                <li>Dependency Injection</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Placeholder for dynamically loaded link section -->
+    <div id="links-section-placeholder"></div>
+
+    <!-- Load external JavaScript file for dynamic content loading -->
+    <script src="loadContent.js"></script>
+</body>
+</html>
